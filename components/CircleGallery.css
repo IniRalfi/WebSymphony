@@ -30,8 +30,8 @@
 /* gambar-gambar di circle */
 .circle-image {
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
     transform-origin: center;
     transition: transform 0.1s ease;
     /* transisi halus */

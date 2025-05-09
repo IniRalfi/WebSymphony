@@ -1,5 +1,5 @@
 import React from 'react';
-import CircleGallery from './components/CircleGallery';
+import CircleGallery from '/components/CircleGallery';
 import './App.css';
 
 function App() {

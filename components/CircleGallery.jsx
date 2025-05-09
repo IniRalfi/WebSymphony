@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import gambar1 from '../assets/nahida.png'
-import './CircleGallery.css'; // kita pisah style ke sini ya
-
+import './CircleGallery.css';
 function CircleGallery() {
   const [center, setCenter] = useState({ x: 0, y: 0 });
 
