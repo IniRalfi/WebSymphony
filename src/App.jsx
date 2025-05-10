@@ -1,12 +1,10 @@
 import React from 'react';
-import CircleGallery from '/components/CircleGallery/CircleGallery';
-import AboutSymphony from '/components/AboutSymphony/AboutSymphony';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="container">
-      <CircleGallery />
-      <AboutSymphony />
+      < Home />
     </div>
   );
 }
