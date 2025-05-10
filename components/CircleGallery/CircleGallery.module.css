@@ -3,8 +3,9 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: #2100B1;
-    /* warna latar belakang opsional */
+    background-color: #2100b1;
+    z-index: 1;
+    /* Pastikan di bawah AboutSymphony */
 }
 
 /* animasi mutar */
@@ -37,7 +38,6 @@
     /* transisi halus */
 }
 
-/* teks di tengah */
 .center-text {
     position: absolute;
     top: 50%;
@@ -48,7 +48,28 @@
     text-align: center;
 }
 
-/* teks di pojok kiri bawah */
+.underlined-text {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+    text-decoration-thickness: 1px;
+    transition: text-decoration-color 0.3s ease-in-out;
+}
+
+/* Animasi fade-in */
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .bottom-left-text {
     position: absolute;
     bottom: 20px;

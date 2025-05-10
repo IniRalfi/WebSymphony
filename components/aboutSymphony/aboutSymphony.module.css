@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.title {
+    font-size: 48px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.profile {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.role,
+.name {
+    font-size: 20px;
+    color: #555;
+}
+
+.description {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.features {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+}
+
+.feature-item {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.feature-description {
+    font-size: 14px;
+    color: #777;
+}
+
+.year {
+    font-size: 48px;
+    margin-top: 20px;
+    color: #333;
+}

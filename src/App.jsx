@@ -1,11 +1,12 @@
 import React from 'react';
-import CircleGallery from '/components/CircleGallery';
-import './App.css';
+import CircleGallery from '/components/CircleGallery/CircleGallery';
+import AboutSymphony from '/components/AboutSymphony/AboutSymphony'; // pastikan sudah di-import
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <CircleGallery />
+      <AboutSymphony />
     </div>
   );
 }
