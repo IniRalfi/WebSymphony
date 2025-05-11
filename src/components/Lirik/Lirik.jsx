@@ -1,72 +1,125 @@
+import styles from './Lirik.module.css';
 import React from 'react';
-import styles from './LaguComp.module.css';
-const LaguComp = () => {
-    return( 
-        <div className={styles.container}>
-            <div className={styles.title}>
-                <h2>Mars Symphony</h2>
-            </div>
-            <div className={styles.lirik}>
-                <pre>
-                MARS SYMPHONY 
-                Do = C
 
-                Chord Mars symphony 
-                Verse 1 :
-                C                F          C
-                Di bawah langit biru yang luas
-                F         G        C
-                Nada berpadu tanpa batas
-                C       F          C
-                Harmoni lahir dari jiwa
-                F         G         C
-                Melangkah bersama, penuh asa
+const sections = [
+  { type: 'title', text: 'MARS SYMPHONY' },
+  { type: 'key', text: 'Do = C' },
+  { type: 'label', text: 'Verse 1 :' },
+  {
+    chord: 'C               F          C',
+    lyric: 'Di bawah langit biru yang luas'
+  },
+  {
+    chord: 'F        G           C',
+    lyric: 'Nada berpadu tanpa batas'
+  },
+  {
+    chord: 'C              F    C',
+    lyric: 'Harmoni lahir dari jiwa'
+  },
+  {
+    chord: 'F             G           C',
+    lyric: 'Melangkah bersama, penuh asa'
+  },
+  { type: 'label', text: 'Chorus :' },
+  {
+    chord: 'F              Em',
+    lyric: 'Mars Symphony, simfoni kita'
+  },
+  {
+    chord: 'Dm        G        C',
+    lyric: 'Menggema kuat di angkasa'
+  },
+  {
+    chord: 'F                Em',
+    lyric: 'Ilmu dan mimpi jadi cahaya'
+  },
+  {
+    chord: 'Dm        G           C',
+    lyric: 'Bersama FMIPA, kita juara'
+  },
+  { type: 'label', text: 'Verse 2 :' },
+  {
+    chord: 'C          F           C',
+    lyric: 'Angin membawa pesan sejati'
+  },
+  {
+    chord: 'F          G            C',
+    lyric: 'Tentang semangat dan harmoni'
+  },
+  {
+    chord: 'C              F       C',
+    lyric: 'Stiap langkah, penuh makna'
+  },
+  {
+    chord: 'F               G          C',
+    lyric: 'Ciptakan dunia lebih indah'
+  },
+  { type: 'label', text: 'Chorus :' },
+  {
+    chord: 'F               Em',
+    lyric: 'Mars Symphony, simfoni kita'
+  },
+  {
+    chord: 'Dm        G          C',
+    lyric: 'Menggema kuat di angkasa'
+  },
+  {
+    chord: 'F               Em',
+    lyric: 'Ilmu dan mimpi jadi cahaya'
+  },
+  {
+    chord: 'Dm        G           C',
+    lyric: 'Bersama FMIPA, kita juara'
+  },
+  { type: 'label', text: 'Outro :' },
+  {
+    chord: 'F               Em',
+    lyric: 'Mars Symphony, lagu abadi'
+  },
+  {
+    chord: 'Dm        G          C',
+    lyric: 'Harmoni cinta untuk bumi'
+  },
+  {
+    chord: 'F               Em',
+    lyric: 'Mars Symphony, lagu abadi'
+  },
+  {
+    chord: 'Dm       G           C',
+    lyric: 'Harmoni cinta untuk bumi...'
+  },
+  {
+    chord: 'Dm       G           C',
+    lyric: 'Harmoni cinta untuk bumi...'
+  },
+];
 
-                Chorus :
-                F              Em
-                Mars Symphony, simfoni kita
-                Dm       G       C
-                Menggema kuat di angkasa
-                F               Em
-                Ilmu dan mimpi jadi cahaya
-                Dm       G              C
-                Bersama FMIPA, kita juara
-
-                Verse 2 :
-                C             F          C
-                Angin membawa pesan sejati
-                F       G             C
-                Tentang semangat dan harmoni
-                C            F           C
-                Stiap langkah, penuh makna
-                F         G              C
-                Ciptakan dunia lebih indah
-
-                Chorus :
-                F              Em
-                Mars Symphony, simfoni kita
-                Dm       G             C
-                Menggema kuat di angkasa
-                F               Em
-                Ilmu dan mimpi jadi cahaya
-                Dm      G           C
-                Bersama FMIPA, kita juara
-
-                Outro :
-                F              Em
-                Mars Symphony, lagu abadi
-                Dm      G           C
-                Harmoni cinta untuk bumi
-                F              Em
-                Mars Symphony, lagu abadi
-                Dm      G           C
-                Harmoni cinta untuk bumi...
-                Dm      G           C
-                Harmoni cinta untuk bumi...
-                </pre>
-            </div>
-        </div>
-    );
+const Lirik = () => {
+  return (
+    <div className={styles.lyricsContainer}>
+      {sections.map((line, idx) => {
+        if (line.type === 'title') {
+          return <h2 key={idx} className={styles.title}>{line.text}</h2>;
+        }
+        if (line.type === 'key') {
+          return <p key={idx} className={styles.key}>{line.text}</p>;
+        }
+        if (line.type === 'section') {
+          return <p key={idx} className={styles.sectionLabel}>{line.text}</p>;
+        }
+        if (line.type === 'label') {
+          return <p key={idx} className={styles.stylesLabel}>{line.text}</p>;
+        }
+        return (
+          <div key={idx} className={styles.lyricBlock}>
+            <pre className={styles.chordLine}>{line.chord}</pre>
+            <pre className={styles.lyricLine}>{line.lyric}</pre>
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 
-export default LaguComp;
+export default Lirik;
