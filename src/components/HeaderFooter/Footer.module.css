@@ -1,0 +1,79 @@
+.footer {
+    position: relative;
+    background-color: #1b00c2;
+    color: white;
+    padding: 2rem 1rem 3rem 1rem;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.starLeft,
+.starRight {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.starLeft {
+    top: 0;
+    left: 0;
+    max-width: 300px;
+}
+
+.starRight {
+    bottom: 0;
+    right: 0;
+    max-width: 300px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.left, .center, .right {
+    flex: 1;
+    min-width: 200px;
+}
+
+.logoSymphony {
+    max-width: 120px;
+    margin-left: 1rem;
+}
+
+.logoHmsi {
+    max-width: 100px;
+    float: right;
+    margin-right: 1rem;
+}
+
+.center p {
+    margin: 0.3rem 0;
+}
+
+.links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.links a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.links a:hover {
+    opacity: 0.8;
+}

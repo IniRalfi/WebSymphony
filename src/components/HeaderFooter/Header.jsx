@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './header.module.css';
+import gambar from '/assets/titik_tiga.png';
 
 const Header = () => {
     return (
@@ -10,7 +11,7 @@ const Header = () => {
                     <h1 className={styles.title}>Mahasiswa</h1>
                 </div>
                 <div className={styles.menuIcon}>
-                    <img assets="titik_tiga.png" alt="Menu" className={styles.menuImage} />
+                    <img src={gambar} alt="Menu" className={styles.menuImage} />
                 </div>
             </div>
         </div>
