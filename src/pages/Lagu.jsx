@@ -1,10 +1,14 @@
 import React from "react";
-import CardGallery from "../components/Card/CardGallery";
+// import Header from "../components/HeaderFooter/Header.jsx";
+// import Footer from "../components/HeaderFooter/Footer.jsx"
+import Lirik from "../components/Lirik/Lirik.jsx"
 
 const Lagu = () => {
   return (
     <div>
-      <CardGallery />
+      {/* <Header /> */}
+      <Lirik />
+      {/* <Footer /> */}
     </div>
   );
 };
