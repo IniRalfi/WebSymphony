@@ -5,10 +5,6 @@ import AboutSymphony from '../components/AboutSymphony/AboutSymphony';
 const Home = () => {
   return (
     <div>
-      <nav>
-        <button onClick={() => scrollToSection('circle')}>Ke Circle Gallery</button>
-        <button onClick={() => scrollToSection('about')}>Ke About Symphony</button>
-      </nav>
 
       <section id='circle'>
         <CircleGalley />

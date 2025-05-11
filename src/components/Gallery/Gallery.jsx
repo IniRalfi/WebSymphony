@@ -5,7 +5,7 @@ const Gallery = () => {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    fetch('/database/data_mahasiswa_2.json')
+    fetch('/database/data_mahasiswa.json')
       .then((res) => res.json())
       .then((data) => {
         setStudents(data);
