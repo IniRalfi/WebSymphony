@@ -1,79 +1,20 @@
 /* Menghilangkan margin dan padding di seluruh elemen */
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  /* Menyembunyikan scroll jika ada overflow */
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* Menyembunyikan scroll jika ada overflow */
+    box-sizing: border-box;
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-/* CircleGallery full screen */
-.circle-gallery {
-  position: relative;
-  width: 100vw;
-  /* Mengisi layar lebar */
-  height: 100vh;
-  /* Mengisi layar tinggi */
-  background-color: #2100b1;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* AboutSymphony full screen */
-.aboutSymphony {
-  position: relative;
-  width: 100vw;
-  /* Mengisi layar lebar */
-  height: 100vh;
-  /* Mengisi layar tinggi */
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  z-index: 1;
-  /* Agar berada di atas CircleGallery */
-}
-
-/* Styling untuk komponen AboutSymphony */
-.textContainer {
-  text-align: center;
-  padding: 20px;
-}
-
-.textContainer h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.textContainer p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.5;
-}
-
-.imageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imageContainer img {
-  width: 250px;
-  height: auto;
-  border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
