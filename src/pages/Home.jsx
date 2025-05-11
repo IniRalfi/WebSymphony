@@ -1,6 +1,6 @@
 import React from "react";
-import CircleGalley from '../../components/CircleGallery/CircleGallery';
-import AboutSymphony from '../../components/AboutSymphony/AboutSymphony';
+import CircleGalley from '../components/CircleGallery/CircleGallery';
+import AboutSymphony from '../components/AboutSymphony/AboutSymphony';
 
 const Home = () => {
   return (
