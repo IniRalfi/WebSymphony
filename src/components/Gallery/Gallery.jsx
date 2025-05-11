@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from './Gallery.module.css';
+import ProfileCard from '../Card/ProfileCard'; // pastikan path-nya sesuai
+
 
 const Gallery = () => {
   const [students, setStudents] = useState([]);
@@ -22,19 +24,13 @@ const Gallery = () => {
 
       <div className={styles['gallery-grid']}>
         {students.map((student, index) => {
-          const isEven = parseInt(student.nim.slice(-1)) % 2 === 0;
-          const rotationStyle = isEven ? { transform: 'rotate(-90deg)' } : {};
-
           return (
             <div key={index} className={styles['gallery-item']}>
-              <img
-                src={student.foto[0]}
-                alt={`Foto ${student.nama || student.nim}`}
-                style={{ width: '100px', ...rotationStyle }}
-                onError={() => console.log("Gambar gagal dimuat:", student.foto[0])} // Log jika gambar gagal dimuat
+              <ProfileCard
+                nama={student.nama || 'Tanpa Nama'}
+                nim={student.nim}
+                foto={student.foto[0]}
               />
-              <h3>{student.nama || 'Tanpa Nama'}</h3>
-              <p>{student.nim}</p>
             </div>
           );
         })}

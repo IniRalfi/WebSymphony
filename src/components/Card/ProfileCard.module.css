@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.profile-card {
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 16px;
+    margin: 10px auto;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.profile-info {
+    margin-top: 10px;
+}
+
+.student-id {
+    font-size: 14px;
+    color: #666;
+}
+
+.student-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
