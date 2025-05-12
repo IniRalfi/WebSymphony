@@ -1,5 +1,5 @@
 .gallery-container {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     color: white;
     padding: 20px;
     text-align: center;
@@ -7,12 +7,16 @@
 
 .gallery-header {
     margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background-color: transparent;
 }
 
 .gallery-item {
@@ -21,6 +25,7 @@
     padding: 10px;
     border-radius: 15px;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .gallery-item img {

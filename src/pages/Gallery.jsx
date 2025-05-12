@@ -1,10 +1,12 @@
 import React from "react";
-import CardGallery from "../components/Card/CardGallery";
+// import CardGallery from "../components/Card/CardGallery";
+
+import Gallery from "../components/Gallery/Gallery";
 
 const GalleryPage = () => {
   return (
     <div>
-      <CardGallery />
+      <Gallery />
     </div>
   );
 };

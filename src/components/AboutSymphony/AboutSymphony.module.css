@@ -23,8 +23,11 @@ body {
 
 .content {
     display: flex;
-    width: 100%;
-    padding: 20px;
+    flex-direction: row; /* Scroll horizontal = arah row */
+    overflow-x: auto; /* Aktifkan scroll horizontal */
+    gap: 20px; /* Jarak antar elemen */
+    padding: 10px;
+    max-width: 100%; /* Pastikan tidak melebihi kontainer */
 }
 
 .profile {
@@ -83,4 +86,13 @@ body {
     font-size: 48px;
     margin-top: 20px;
     color: #333;
+}
+
+.content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 4px;
 }
