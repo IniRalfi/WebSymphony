@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import gambar1 from "/assets/nahida.png";
+import gambar1 from "/assets/logoSymphony.png";
 import styles from "./CircleGallery.module.css";
 
 function CircleGallery() {
@@ -41,7 +41,7 @@ function CircleGallery() {
       }
    }, [currentWordIndex]);
 
-   const radius = 320; // jarak gambar dari tengah
+   const radius = 280; // jarak gambar dari tengah
    const imageSize = 40;
 
    const images = [
