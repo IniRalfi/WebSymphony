@@ -12,7 +12,7 @@ const aboutSymphony = () => {
 				<CardGallery
 					title="Ketua angkatan"
 					name="Rito Ramadhan"
-					imageUrl="https://res.cloudinary.com/iniralfi/image/upload/v1746925731/IMG_9546_ugtjvm.jpg"
+					imageUrl="https://res.cloudinary.com/iniralfi/image/upload/v1746965928/DSC09547_rp06mx.jpg"
 				/>
 				<div className={styles.features}>
 					<CardGallery
