@@ -7,7 +7,7 @@ import Lirik from "../components/Lirik/Lirik"
 const Lagu = () => {
   return (
     <div>
-      <Header />
+      <Header label='Lirik Lagu' title='Symphony Abadi' />
       <Lirik />
       <Footer />
     </div>

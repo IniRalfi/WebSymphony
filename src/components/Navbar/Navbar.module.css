@@ -2,19 +2,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #2100b1;
     padding: 10px 30px;
     color: rgb(255, 255, 255);
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: backgorund-color 0.3s ease, color 0.3 ease;
+}
+
+.navbar.scrolled {
+    background-color: white;
+    color: black;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+.navbar.scrolled .logo img {
+    filter: grayscale(100%) brightness(0%) contrast(100%); /* Ubah jadi hitam */
+}
 .logo {
     font-size: 1.2rem;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: inherit;
+    display: flex;
+    align-items: center;
 }
 
 .menu-toggle {
@@ -26,9 +37,23 @@
 .bar {
     width: 25px;
     height: 3px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     margin: 3px 0;
     transition: 0.4s;
+}
+
+.navbar.scrolled .bar {
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar.scrolled .nav-links a {
+    color: black;
 }
 
 .nav-links {
@@ -40,12 +65,16 @@
     list-style: none;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+.homeNavbar {
+    background-color: #2100b1; /* warna beranda */
+    transition: background-color 0.3s ease;
 }
 
-/* Responsive */
+.defaultNavbar {
+    background-color: #ef4a00; /* warna halaman lain */
+    transition: background-color 0.3s ease;
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
@@ -55,15 +84,34 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        right: 20px;
-        top: 60px;
-        background-color: #232323;
+        right: 0px;
+        top: 40px;
+        background-color: #2100b1;
         padding: 10px;
-        border-radius: 8px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .navbar.scrolled .nav-links {
+        background-color: white;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     }
 
     .nav-links.show {
         display: flex;
+    }
+
+    .navbar.scrolled .nav-links a {
+        color: black;
+    }
+
+    .showHome {
+        display: flex;
+        background-color: #2100b1;
+    }
+
+    .showDefault {
+        display: flex;
+        background-color: #ef4a00;
     }
 }
 

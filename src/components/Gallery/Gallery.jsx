@@ -11,7 +11,6 @@ const Gallery = () => {
       .then((res) => res.json())
       .then((data) => {
         setStudents(data);
-        console.log(data); // Cek data yang diterima
       })
       .catch((err) => console.error('Gagal memuat data:', err));
   }, []);

@@ -6,11 +6,12 @@ function CircleGallery() {
    const [center, setCenter] = useState({ x: 0, y: 0 });
    const [currentWordIndex, setCurrentWordIndex] = useState(0);
    const [isAnimating, setIsAnimating] = useState(false); // Menambahkan state untuk animasi
-
+   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
    const words = ["Generasi Emas", "Programmer", "System Analyst", "Designer"];
 
    useEffect(() => {
       const handleResize = () => {
+         setIsMobile(window.innerWidth <= 768);
          setCenter({
             x: window.innerWidth / 2,
             y: window.innerHeight / 2,
@@ -21,6 +22,7 @@ function CircleGallery() {
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
    }, []);
+
 
    // ganti kata
    useEffect(() => {
@@ -41,40 +43,12 @@ function CircleGallery() {
       }
    }, [currentWordIndex]);
 
-   const radius = 280; // jarak gambar dari tengah
-   const imageSize = 40;
+   const radius = isMobile ? 160 : 320;
+   const imageSize = isMobile ? 24 : 32;
+   const totalImages = isMobile ? 16 : 28;
 
-   const images = [
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-      gambar1,
-   ];
 
+   const images = Array.from({ length: totalImages }, () => gambar1)
    return (
       <div className={styles["circle-gallery"]}>
          <div className={styles["circle-rotation"]}>
@@ -91,6 +65,8 @@ function CircleGallery() {
                      style={{
                         left: `${x}px`,
                         top: `${y}px`,
+                        width: `${imageSize}px`,
+                        height: `${imageSize}px`,
                      }}
                   />
                );
@@ -98,18 +74,28 @@ function CircleGallery() {
          </div>
 
          {/* Teks Tengah */}
-         <div className={styles["center-text"]}>
+         <div
+            className={styles["center-text"]}
+            style={{
+               fontSize: isMobile ? "12px" : "16px",
+            }}
+         >
             Symphony,{" "}
             <span
-               className={`${styles["underlined-text"]} ${isAnimating ? styles["fade-in"] : ""
-                  }`}
+               className={`${styles["underlined-text"]} ${isAnimating ? styles["fade-in"] : ""}`}
             >
                {words[currentWordIndex]}
             </span>{" "}
             pilihan kamu.
          </div>
 
-         <div className={styles["bottom-left-text"]}>
+         {/* Teks bawah kiri */}
+         <div
+            className={styles["bottom-left-text"]}
+            style={{
+               fontSize: isMobile ? "10px" : "12px",
+            }}
+         >
             "Smart system, strong synergy" <br />
             Dengan teknologi, buat perubahan yang berarti
          </div>
