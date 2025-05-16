@@ -1,11 +1,11 @@
 import React from "react";
 import CircleGalley from '../components/CircleGallery/CircleGallery';
 import AboutSymphony from '../components/AboutSymphony/AboutSymphony';
+import Footer from "../components/HeaderFooter/Footer.jsx"
 
 const Home = () => {
   return (
     <div>
-
       <section id='circle'>
         <CircleGalley />
       </section>
@@ -13,6 +13,8 @@ const Home = () => {
       <section id='about'>
         <AboutSymphony />
       </section>
+
+      <Footer />
     </div>
   );
 };

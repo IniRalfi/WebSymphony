@@ -15,11 +15,10 @@
 .image {
     width: 80%;
     height: 70%;
-    background-image: url("https://res.cloudinary.com/iniralfi/image/upload/v1746925731/IMG_9546_ugtjvm.jpg"); /* Ganti dengan URL gambar yang sesuai */
-    background-size: cover;
     background-position: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    background-size: cover;
 }
 
 .text-container {

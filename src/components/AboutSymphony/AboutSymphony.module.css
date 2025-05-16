@@ -21,6 +21,19 @@ body {
     margin-top: 10px;
 }
 
+.subtitle {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.text {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    width: 80%;
+    line-height: 1.5rem;
+}
+
 .content {
     display: flex;
     flex-direction: row; /* Scroll horizontal = arah row */
@@ -83,7 +96,7 @@ body {
 }
 
 .year {
-    font-size: 48px;
+    font-size: 26px;
     margin-top: 20px;
     color: #333;
 }

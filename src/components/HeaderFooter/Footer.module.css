@@ -1,6 +1,6 @@
 .footer {
     position: relative;
-    background-color: #1b00c2;
+    background-color: #2100b1;
     color: white;
     padding: 2rem 1rem 3rem 1rem;
     font-family: sans-serif;
@@ -37,13 +37,15 @@
     z-index: 1;
 }
 
-.left, .center, .right {
+.left,
+.center,
+.right {
     flex: 1;
     min-width: 200px;
 }
 
 .logoSymphony {
-    max-width: 120px;
+    max-width: 100px;
     margin-left: 1rem;
 }
 
