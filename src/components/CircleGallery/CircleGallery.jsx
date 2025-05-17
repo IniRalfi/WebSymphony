@@ -43,8 +43,8 @@ function CircleGallery() {
       }
    }, [currentWordIndex]);
 
-   const radius = isMobile ? 160 : 320;
-   const imageSize = isMobile ? 24 : 32;
+   const radius = isMobile ? 160 : 280;
+   const imageSize = isMobile ? 20 : 28;
    const totalImages = isMobile ? 16 : 28;
 
 

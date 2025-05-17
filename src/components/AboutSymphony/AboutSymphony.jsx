@@ -42,31 +42,6 @@ const AboutSymphony = () => {
 			imageUrl: Symphony,
 		},
 
-		{
-			title: 'Ketua angkatan',
-			name: 'Rito Ramadhan',
-			imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1746925666/IMG_9472_o9lxz0.jpg',
-		},
-		{
-			title: 'Tempat Favorit',
-			name: 'Lab Sisfo',
-			imageUrl: LabSisfo,
-		},
-		{
-			title: 'Hand Sign - Bagian Depan',
-			name: '',
-			imageUrl: sign2,
-		},
-		{
-			title: 'Hand Sign - Bagian Belakang',
-			name: '',
-			imageUrl: sign1,
-		},
-		{
-			title: 'Logo Angkatan',
-			name: 'Symphony',
-			imageUrl: Symphony,
-		}
 	];
 
 	return (

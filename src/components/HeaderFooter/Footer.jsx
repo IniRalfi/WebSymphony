@@ -28,7 +28,7 @@ const Footer = () => {
             <div className={styles.links}>
                 <a href="/">Beranda</a>
                 <a href="/galeri">Galeri</a>
-                <a href="/profile">Profile mahasiswa</a>
+                <a href="/profile-mahasiswa">Profile mahasiswa</a>
                 <a href="/lagu">Lagu-lagu</a>
                 <a href="https://instagram.com/the.symphony24" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
