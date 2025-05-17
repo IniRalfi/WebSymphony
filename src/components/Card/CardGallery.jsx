@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './CardGallery.module.css';
 
-const CardGallery = ({ title, name, imageUrl }) => {
+const CardGallery = ({ title, name, imageUrl, className }) => {
   return (
     <div className={styles.card}>
       <div
