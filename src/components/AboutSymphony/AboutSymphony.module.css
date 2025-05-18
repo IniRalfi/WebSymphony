@@ -63,12 +63,12 @@ body {
 }
 
 :global(.swiper-slide) {
-    width: 280px !important; /* Fixed width for mobile */
+    width: 380px !important; /* Fixed width for mobile */
     height: 380px !important;
     transition: all 0.4s ease;
     margin: 0;
-    margin-right: 0.3rem;
-    margin-left: -2.7rem;
+    margin-right: 15px;
+    margin-left: 20px;
 }
 
 /* Slide aktif (tengah) */

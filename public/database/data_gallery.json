@@ -1,20 +1,25 @@
 [
     {
         "id": 1,
-        "title": "Kegiatan Kampus",
+        "title": "Matrikulasi",
         "photos": [
-            "https://res.cloudinary.com/.../activity1.jpg",
-            "https://res.cloudinary.com/.../activity2.jpg"
+            "https://res.cloudinary.com/iniralfi/image/upload/v1747560462/foto_bersama_symphony_zkuyls.jpg",
+            "https://res.cloudinary.com/iniralfi/image/upload/v1747560458/IMG-20240816-WA0073_mfmkdp.jpg",
+            "https://res.cloudinary.com/iniralfi/image/upload/v1747560456/IMG-20240816-WA0081_mqkotx.jpg",
+            "https://res.cloudinary.com/iniralfi/image/upload/v1747560455/IMG-20240816-WA0015_rbvxdq.jpg"
         ],
-        "date": "2024-03-15"
+        "date": "2024-08-15"
     },
+
     {
-        "id": 2,
-        "title": "Acara Tahunan",
+        "id": 1,
+        "title": "Matrikulasi",
         "photos": [
-            "https://res.cloudinary.com/.../event1.jpg",
-            "https://res.cloudinary.com/.../event2.jpg"
+            "https://res.cloudinary.com/iniralfi/image/upload/v1747560462/foto_bersama_symphony_zkuyls.jpg",
+            "https://res.cloudinary.com/iniralfi/image/upload/v1747560458/IMG-20240816-WA0073_mfmkdp.jpg",
+            "https://res.cloudinary.com/iniralfi/image/upload/v1747560456/IMG-20240816-WA0081_mqkotx.jpg",
+            "https://res.cloudinary.com/iniralfi/image/upload/v1747560455/IMG-20240816-WA0015_rbvxdq.jpg"
         ],
-        "date": "2024-05-20"
+        "date": "2024-08-15"
     }
 ]

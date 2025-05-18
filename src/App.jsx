@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import Lagu from './pages/Lagu';
 import ProfileMahasiswa from './pages/ProfileMahasiswa';
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/tentang" element={<Home />} />
         <Route path="/lagu" element={<Lagu />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/profile-mahasiswa" element={<ProfileMahasiswa />} />
       </Routes>
     </Router>

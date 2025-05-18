@@ -1,0 +1,177 @@
+/* Loading State */
+.loading,
+.empty {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.galleryContainer {
+    width: 100%;
+    max-width: 1400px; /* Batas maksimum */
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Rata tengah horizontal */
+    overflow: hidden;
+}
+
+/* Card Gallery */
+.galleryItem {
+    width: 100%; /* 70% dari parent */
+    min-width: 600px; /* Minimum width */
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Konten card rata tengah */
+    overflow: hidden;
+}
+
+/* Gallery Header */
+/* Header Card */
+.galleryHeader {
+    width: 100%;
+    text-align: center; /* Teks rata tengah */
+    margin-bottom: 1.5rem;
+}
+
+.galleryTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Card Foto */
+.photoCard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Gambar - Paksa Ukuran */
+.photoImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Untuk crop proporsional */
+    object-position: center;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.photoCard:hover .photoImage {
+    transform: scale(1.03);
+}
+
+.swiperContainer {
+    width: 100%;
+    height: 420px; /* 400px + padding */
+    padding: 10px 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    padding: 10px 0; /* Beri breathing room */
+}
+
+/* Slide */
+.swiperSlide {
+    width: 600px !important; /* Fixed width */
+    height: 400px !important; /* Fixed height */
+    margin: 0 25px 0 100px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: #f5f5f5; /* Warna fallback */
+}
+/* Efek coverflow yang lebih smooth */
+/* Efek Coverflow yang Lebih Ketat */
+.swiper-slide-active {
+    transform: scale(1) !important;
+    z-index: 2;
+}
+.swiper-slide-next,
+.swiper-slide-prev {
+    transform: scale(0.85) translateY(5%) !important;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+    .swiper {
+        width: 100vw !important;
+        margin-left: -2vw;
+        padding: 10px 30px;
+    }
+
+    .swiperSlide {
+        width: 160vw !important;
+        height: 120vw !important;
+        transform: none !important;
+        margin-right: 15px !important;
+    }
+
+    .photoCard {
+        border-radius: 6px;
+    }
+    .swiper-wrapper {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    /* Perbaikan posisi gambar di mobile */
+    .photoImage {
+        object-position: center;
+    }
+    .swiperContainer {
+        overflow: visible !important;
+        padding: 0 5vw !important;
+    }
+    .swiper-slide-active {
+        transform: scale(1);
+        margin-right: 30px !important;
+    }
+
+    /* Adjust coverflow effect untuk mobile */
+    .swiper-slide-next,
+    .swiper-slide-prev {
+        transform: scale(0.8) translateY(0) !important;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .swiperSlide {
+        width: 100vw !important;
+        height: 70vw !important;
+        max-width: 800px !important;
+        max-height: 600px !important;
+        margin: 0 -5px 0 150px !important;
+    }
+
+    .swiperContainer {
+        height: 350px;
+    }
+}

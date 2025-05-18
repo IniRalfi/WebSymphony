@@ -5,7 +5,7 @@
     overflow: hidden;
     background-color: #2100b1;
     z-index: 1;
-    /* Pastikan di bawah AboutSymphony */
+    margin-top: -7vh;
 }
 
 /* animasi mutar */
@@ -28,14 +28,12 @@
     }
 }
 
-/* gambar-gambar di circle */
 .circle-image {
     position: absolute;
     width: 24px;
     height: 24px;
     transform-origin: center;
     transition: transform 0.1s ease;
-    /* transisi halus */
 }
 
 .center-text {
