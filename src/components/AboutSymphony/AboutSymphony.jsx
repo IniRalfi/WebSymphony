@@ -14,7 +14,6 @@ import sign2 from '/assets/HandSignFront.png';
 import Symphony from '/assets/Symphony.png';
 
 const AboutSymphony = () => {
-	const [swiperRef, setSwiperRef] = React.useState(null);
 	const slides = [
 		{
 			title: 'Ketua angkatan',
@@ -68,7 +67,6 @@ const AboutSymphony = () => {
 			<div className={styles.swiperWrapper}>
 				<Swiper
 					modules={[EffectCoverflow]} // Tambahkan modules
-					onSwiper={setSwiperRef} // Simpan swiper instance
 					effect={'coverflow'}
 					grabCursor={true}
 					centeredSlides={true}
@@ -93,7 +91,7 @@ const AboutSymphony = () => {
 						}
 					}}
 					slideToClickedSlide={true}
-					loop={true}
+					lazyPreloadPrevNext={true}
 				>
 					{slides.map((slide, idx) => (
 						<SwiperSlide key={idx} style={{ width: '280px', height: '380px' }}>

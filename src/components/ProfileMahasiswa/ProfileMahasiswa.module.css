@@ -1,6 +1,5 @@
 .gallery-container {
     background-color: rgb(255, 255, 255);
-    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -25,7 +24,7 @@
     padding: 10px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-item img {

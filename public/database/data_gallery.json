@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Kegiatan Kampus",
+        "photos": [
+            "https://res.cloudinary.com/.../activity1.jpg",
+            "https://res.cloudinary.com/.../activity2.jpg"
+        ],
+        "date": "2024-03-15"
+    },
+    {
+        "id": 2,
+        "title": "Acara Tahunan",
+        "photos": [
+            "https://res.cloudinary.com/.../event1.jpg",
+            "https://res.cloudinary.com/.../event2.jpg"
+        ],
+        "date": "2024-05-20"
+    }
+]

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './ProfileCard.module.css'
 
-const ProfileCard = ({ nama, nim, foto }) => {
+const ProfileCard = ({ nama, nim, foto, onClick }) => {
   return (
-    <div className={styles["profile-card"]}>
+    <div className={styles["profile-card"]} onClick={onClick}>
       <img
         src={foto}
         alt={nama}
@@ -18,6 +18,6 @@ const ProfileCard = ({ nama, nim, foto }) => {
       </div>
     </div>
   );
-}
+};
 
 export default ProfileCard;
