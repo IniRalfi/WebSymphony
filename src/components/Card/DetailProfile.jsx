@@ -55,7 +55,7 @@ const DetailProfile = ({ mahasiswa, onClose, onPrev, onNext }) => {
               className={styles.instagram}
             >
               <img
-                src="/assets/instagram.png"
+                src="https://res.cloudinary.com/iniralfi/image/upload/v1747568076/instagram_tn03rt.png"
                 alt="IG"
                 width={32}
               />
