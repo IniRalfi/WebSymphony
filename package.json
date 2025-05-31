@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.2",
+    "next": "15.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.12",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.3"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "typescript": "^5",
