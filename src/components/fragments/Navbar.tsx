@@ -22,7 +22,7 @@ const nav = [
 
 export const Navbar = () => {
   return (
-    <nav className="absolute top-0 left-0 z-50 w-full">
+    <nav className="absolute top-0 left-0 z-50 hidden w-full lg:block">
       <div className="container flex justify-end gap-x-4 py-10">
         {nav.map((item) => (
           <Link

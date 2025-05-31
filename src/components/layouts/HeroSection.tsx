@@ -10,7 +10,7 @@ export const HeroSection = () => {
           Symphony, <span className="underline">Generasi emas</span> pilihan
           kamu.
         </h1>
-        <p className="absolute bottom-8 left-0 text-xs leading-relaxed">
+        <p className="absolute bottom-8 left-4 hidden text-xs leading-relaxed lg:block">
           <span className="font-semibold">“Smart system, strong synergy”</span>
           <br />
           Dengan <span className="font-semibold">teknologi</span>, buat
