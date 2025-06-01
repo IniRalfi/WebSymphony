@@ -1,6 +1,10 @@
 "use client"
 
 import React, { useEffect, useRef, useState } from "react"
+import Image from "next/image"
+
+import { GALLERY } from "@/constants/gallery"
+import { motion } from "motion/react"
 
 export const CircleImage = () => {
   const imageContainerRef = useRef<HTMLDivElement>(null)
@@ -13,25 +17,46 @@ export const CircleImage = () => {
   }, [imageContainerRef])
 
   return (
-    <div ref={imageContainerRef} className="relative size-full">
-      {Array.from({ length: 28 }).map((src, i) => {
-        const angle = (i * 360) / 28
+    <motion.div
+      initial={{ opacity: 0, scale: 3, rotate: -45 }}
+      animate={{ opacity: 1, scale: 1, rotate: 0 }}
+      transition={{ duration: 2, delay: 0.1, type: "spring" }}
+      ref={imageContainerRef}
+      className="relative size-full"
+    >
+      <motion.div
+        animate={{ rotate: 360 }}
+        transition={{
+          duration: 30,
+          ease: "linear",
+          repeat: Infinity,
+          repeatType: "loop",
+        }}
+        className="relative size-full"
+      >
+        {GALLERY.map((item, i) => {
+          const angle = (i * 360) / 28
 
-        const x = radius * Math.cos((angle * Math.PI) / 180)
-        const y = radius * Math.sin((angle * Math.PI) / 180)
+          const x = radius * Math.cos((angle * Math.PI) / 180)
+          const y = radius * Math.sin((angle * Math.PI) / 180)
 
-        return (
-          <div
-            key={i}
-            className="absolute h-10 w-7 overflow-hidden bg-red-500"
-            style={{
-              left: `calc(50% + ${x}px - 0.875rem)` /* half of width */,
-              top: `calc(50% + ${y}px - 1.25rem)` /* half of height */,
-              transform: `rotate(${angle + 90}deg)`,
-            }}
-          ></div>
-        )
-      })}
-    </div>
+          return (
+            <Image
+              src={item.src}
+              alt={item.title}
+              width={300}
+              height={400}
+              key={i}
+              className="absolute h-10 w-7 object-cover object-center transition-all backface-visible hover:scale-150 hover:rotate-y-180"
+              style={{
+                left: `calc(50% + ${x}px - 0.875rem)` /* half of width */,
+                top: `calc(50% + ${y}px - 1.25rem)` /* half of height */,
+                transform: `rotate(${angle + 90}deg)`,
+              }}
+            />
+          )
+        })}
+      </motion.div>
+    </motion.div>
   )
 }
