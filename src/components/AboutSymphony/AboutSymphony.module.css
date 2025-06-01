@@ -116,6 +116,6 @@ body {
         margin: 0 -5rem;
         max-width: 1200px; /* Sesuaikan dengan kebutuhan */
         transform: scale(0.7);
-        overflow: visible;
+        overflow: hidden;
     }
 }
