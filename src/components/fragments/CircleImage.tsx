@@ -12,7 +12,7 @@ export const CircleImage = () => {
 
   useEffect(() => {
     if (imageContainerRef.current) {
-      setRadius(imageContainerRef.current.offsetWidth / 2.2)
+      setRadius(imageContainerRef.current.offsetWidth / 2.25)
     }
   }, [imageContainerRef])
 
@@ -47,7 +47,7 @@ export const CircleImage = () => {
               width={300}
               height={400}
               key={i}
-              className="absolute h-10 w-7 object-cover object-center transition-all backface-visible hover:scale-150 hover:rotate-y-180"
+              className="absolute h-10 w-7 object-cover object-center"
               style={{
                 left: `calc(50% + ${x}px - 0.875rem)` /* half of width */,
                 top: `calc(50% + ${y}px - 1.25rem)` /* half of height */,
