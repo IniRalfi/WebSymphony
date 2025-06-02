@@ -85,7 +85,7 @@
 
     .chordLine,
     .lyricLine {
-        font-size: 14px; /* Ukuran font akord dan lirik diperkecil */
+        font-size: 12px; /* Ukuran font akord dan lirik diperkecil */
     }
 }
 
