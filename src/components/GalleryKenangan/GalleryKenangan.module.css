@@ -4,6 +4,7 @@
     text-align: center;
     padding: 40px;
     font-size: 1.2rem;
+    color: #555;
 }
 
 *,
@@ -16,7 +17,7 @@
     width: 100%;
     max-width: 1400px; /* Batas maksimum */
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center; /* Rata tengah horizontal */
@@ -26,7 +27,7 @@
 /* Card Gallery */
 .galleryItem {
     width: 100%; /* 70% dari parent */
-    min-width: 600px; /* Minimum width */
+    max-width: 800px; /* Minimum width */
     background: white;
     border-radius: 12px;
     padding: 1.5rem;
@@ -48,25 +49,27 @@
 
 .galleryTitle {
     font-size: 1.5rem;
-    color: #333;
+    color: #2c3e50;
     margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 .date {
-    color: #666;
+    color: #7f8c8d; /* Warna lebih soft */
     font-size: 0.9rem;
 }
 
 /* Card Foto */
 .photoCard {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
 }
 /* Gambar - Paksa Ukuran */
 .photoImage {
@@ -76,6 +79,8 @@
     object-position: center;
     min-width: 100%;
     min-height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .photoCard:hover .photoImage {
@@ -84,94 +89,82 @@
 
 .swiperContainer {
     width: 100%;
-    height: 420px; /* 400px + padding */
     padding: 10px 0;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .swiper {
     width: 100%;
-    padding: 10px 0; /* Beri breathing room */
+    height: 100%;
 }
 
 /* Slide */
 .swiperSlide {
-    width: 600px !important; /* Fixed width */
-    height: 400px !important; /* Fixed height */
-    margin: 0 25px 0 100px !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    background: #f5f5f5; /* Warna fallback */
-}
-/* Efek coverflow yang lebih smooth */
-/* Efek Coverflow yang Lebih Ketat */
-.swiper-slide-active {
-    transform: scale(1) !important;
-    z-index: 2;
-}
-.swiper-slide-next,
-.swiper-slide-prev {
-    transform: scale(0.85) translateY(5%) !important;
-    opacity: 0.7;
-    z-index: 1;
+    background: transparent;
+    overflow: hidden;
 }
 
-/* Mobile Styles (max-width: 768px) */
 @media (max-width: 768px) {
-    .swiper {
-        width: 100vw !important;
-        margin-left: -2vw;
-        padding: 10px 30px;
+    .galleryContainer {
+        padding: 1.5rem 0.5rem; /* Kurangi padding samping */
     }
 
-    .swiperSlide {
-        width: 160vw !important;
-        height: 120vw !important;
-        transform: none !important;
-        margin-right: 15px !important;
+    .galleryItem {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .galleryTitle {
+        font-size: 1.4rem;
+    }
+
+    .date {
+        font-size: 0.85rem;
+    }
+
+    .swiper {
+        padding: 10px 0; /* Padding vertikal cukup */
+        margin: 10px;
     }
 
     .photoCard {
-        border-radius: 6px;
-    }
-    .swiper-wrapper {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-    /* Perbaikan posisi gambar di mobile */
-    .photoImage {
-        object-position: center;
-    }
-    .swiperContainer {
-        overflow: visible !important;
-        padding: 0 5vw !important;
-    }
-    .swiper-slide-active {
-        transform: scale(1);
-        margin-right: 30px !important;
-    }
-
-    /* Adjust coverflow effect untuk mobile */
-    .swiper-slide-next,
-    .swiper-slide-prev {
-        transform: scale(0.8) translateY(0) !important;
+        width: 360px; /* Sesuaikan lebar card foto untuk tablet */
+        height: 350px; /* Sesuaikan tinggi card foto untuk tablet */
     }
 }
 
-/* Small Mobile (max-width: 480px) */
+/* Small Mobile (max-width: 480px) - Umumnya untuk ponsel */
 @media (max-width: 480px) {
-    .swiperSlide {
-        width: 100vw !important;
-        height: 70vw !important;
-        max-width: 800px !important;
-        max-height: 600px !important;
-        margin: 0 -5px 0 150px !important;
+    .galleryContainer {
+        padding: 1rem 0.25rem; /* Padding lebih kecil lagi */
+    }
+
+    .galleryItem {
+        padding: 0.75rem;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+    }
+
+    .galleryTitle {
+        font-size: 1.2rem;
+    }
+
+    .date {
+        font-size: 0.8rem;
     }
 
     .swiperContainer {
-        height: 350px;
+        height: 320px;
+    }
+
+    .photoCard {
+        width: 220px; /* Lebih kecil untuk ponsel */
+        height: 300px; /* Lebih kecil untuk ponsel */
+        border-radius: 8px;
     }
 }

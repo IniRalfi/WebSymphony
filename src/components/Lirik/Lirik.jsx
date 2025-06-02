@@ -109,7 +109,7 @@ const Lirik = () => {
           return <p key={idx} className={styles.sectionLabel}>{line.text}</p>;
         }
         if (line.type === 'label') {
-          return <p key={idx} className={styles.stylesLabel}>{line.text}</p>;
+          return <p key={idx} className={styles.label}>{line.text}</p>;
         }
         return (
           <div key={idx} className={styles.lyricBlock}>

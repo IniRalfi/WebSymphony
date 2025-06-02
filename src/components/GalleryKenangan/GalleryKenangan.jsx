@@ -77,6 +77,8 @@ const Gallery = () => {
               modules={[EffectCoverflow, Autoplay]}
               className={styles.swiper}
               lazyPreloadPrevNext={true}
+              observer={true}
+              observeParents={true}
             >
               {item.photos.map((photo, index) => (
                 <SwiperSlide key={index} className={styles.swiperSlide}>
