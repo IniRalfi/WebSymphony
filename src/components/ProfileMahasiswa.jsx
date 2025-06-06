@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import studentsData from '../../public/database/data_mahasiswa.json';
+import studentsData from '../database/data_mahasiswa.json';
 import ProfileCard from './Card/ProfileCard';
 import DetailProfile from "./Card/DetailProfile";
 

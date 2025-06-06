@@ -2,7 +2,6 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
-// Import CSS Swiper
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -23,22 +22,22 @@ const AboutSymphony = () => {
         {
             title: 'Tempat Favorit',
             name: 'Lab Sisfo',
-            imageUrl: '/assets/LabSisfo.jpg',
+            imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263524/LabSisfo_wkz1hg.jpg',
         },
         {
             title: 'Hand Sign - Bagian Depan',
             name: '',
-            imageUrl: '/assets/HandSignFront.png',
+            imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263525/HandSignFront_wa6m3z.png',
         },
         {
             title: 'Hand Sign - Bagian Belakang',
             name: '',
-            imageUrl: '/assets/HandSignBack.png',
+            imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263526/HandSignBack_n0a7ny.png',
         },
         {
             title: 'Logo Angkatan',
             name: 'Symphony',
-            imageUrl: '/assets/Symphony.png',
+            imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263524/Symphony_s1ucn9.png',
         },
 
     ];

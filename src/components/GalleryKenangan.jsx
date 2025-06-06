@@ -10,7 +10,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 // 1. Path impor diperbarui karena file JSON sekarang ada di 'src'
-import galleryData from '../../public/database/data_gallery.json'
+import galleryData from '../database/data_gallery.json'
 
 const Gallery = () => {
   if (!galleryData || galleryData.length === 0) {

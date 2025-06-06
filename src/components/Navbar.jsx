@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import logoSymphony from '/assets/logoSymphony.png';
+import logoSymphony from '../assets/logoSymphony.png';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
