@@ -1,20 +1,23 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 const ProfileCard = ({ nama, nim, foto, onClick }) => {
-
   const handleImageError = (e) => {
-    e.target.onerror = null; // Mencegah loop error jika gambar fallback juga gagal
-    // Kamu bisa ganti dengan path ke gambar placeholder lokalmu
+    e.target.onerror = null;
     e.target.src = "https://via.placeholder.com/200x250/ccc/fff?text=No+Image";
   };
+  const placeholderSrc = foto.replace('/upload/', '/upload/q_auto:low,w_20/')
 
   return (
     <div className="w-full cursor-pointer group" onClick={onClick}>
       <div className="w-full h-[200px] rounded-lg overflow-hidden shadow-md">
-        <img
+        <LazyLoadImage
           src={foto}
           alt={nama}
-          loading="lazy"
+          placeholderSrc={placeholderSrc} // Prop ini sekarang akan berfungsi
+          effect="blur"                   // Prop ini juga akan berfungsi
           className="w-full h-full object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-110"
           onError={handleImageError}
         />
@@ -26,5 +29,4 @@ const ProfileCard = ({ nama, nim, foto, onClick }) => {
     </div>
   );
 };
-
 export default ProfileCard;

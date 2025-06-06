@@ -35,3 +35,17 @@ body,
 .profile-swiper .swiper-pagination-bullet-active {
     background-color: #2100b1 !important; /* Warna pagination aktif */
 }
+
+/* Tambahkan di src/index.css */
+
+/* Mengubah warna titik pagination yang tidak aktif menjadi hitam transparan */
+.swiper-pagination-bullet {
+    background: #000000 !important;
+    opacity: 0.4;
+}
+
+/* Mengubah warna titik pagination yang aktif menjadi hitam solid */
+.swiper-pagination-bullet-active {
+    background: #000000 !important;
+    opacity: 1;
+}
