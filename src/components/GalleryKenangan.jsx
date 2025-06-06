@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Autoplay, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 // Import css sweeper
 import 'swiper/css';
@@ -32,10 +32,6 @@ const Gallery = () => {
               effect={'coverflow'}
               grabCursor={true}
               centeredSlides={true}
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-              }}
               coverflowEffect={{
                 rotate: 0,
                 stretch: 0,
@@ -44,7 +40,7 @@ const Gallery = () => {
                 slideShadows: false,
                 scale: 0.85
               }}
-              modules={[EffectCoverflow, Autoplay, Pagination]}
+              modules={[EffectCoverflow, Pagination]}
               className="w-full h-full"
               pagination={{ clickable: true }}
             >
