@@ -1,26 +1,37 @@
 /* Menghilangkan margin dan padding di seluruh elemen */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
 
 * {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    /* Menyembunyikan scroll jika ada overflow */
-    box-sizing: border-box;
+.profile-swiper .swiper-button-next,
+.profile-swiper .swiper-button-prev {
+    color: #000000; /* Warna panah navigasi */
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 50%;
 }
-
-#root {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+.profile-swiper .swiper-button-next::after,
+.profile-swiper .swiper-button-prev::after {
+    font-size: 14px;
+    font-weight: bold;
+}
+.profile-swiper .swiper-pagination-bullet-active {
+    background-color: #2100b1 !important; /* Warna pagination aktif */
 }

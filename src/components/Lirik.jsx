@@ -1,4 +1,3 @@
-import styles from './Lirik.module.css';
 import React from 'react';
 
 const sections = [
@@ -97,24 +96,21 @@ const sections = [
 
 const Lirik = () => {
   return (
-    <div className={styles.lyricsContainer}>
+    <div className="bg-white text-gray-800 text-center rounded-lg p-4 sm:p-6 my-5 mx-2 md:mx-auto max-w-4xl box-border">
       {sections.map((line, idx) => {
         if (line.type === 'title') {
-          return <h2 key={idx} className={styles.title}>{line.text}</h2>;
+          return <h2 key={idx} className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2.5">{line.text}</h2>;
         }
         if (line.type === 'key') {
-          return <p key={idx} className={styles.key}>{line.text}</p>;
+          return <p key={idx} className="font-bold mb-5 text-base sm:text-lg">{line.text}</p>;
         }
-        if (line.type === 'section') {
-          return <p key={idx} className={styles.sectionLabel}>{line.text}</p>;
-        }
-        if (line.type === 'label') {
-          return <p key={idx} className={styles.label}>{line.text}</p>;
+        if (line.type === 'section' || line.type === 'label') {
+          return <p key={idx} className="font-bold mt-5 mb-1.5 text-left text-base sm:text-lg lg:text-xl">{line.text}</p>;
         }
         return (
-          <div key={idx} className={styles.lyricBlock}>
-            <pre className={styles.chordLine}>{line.chord}</pre>
-            <pre className={styles.lyricLine}>{line.lyric}</pre>
+          <div key={idx} className="mb-3 md:mb-4 text-left">
+            <pre className="font-mono m-0 whitespace-pre overflow-x-auto text-sm md:text-base lg:text-lg">{line.chord}</pre>
+            <pre className="font-mono m-0 whitespace-pre overflow-x-auto text-sm md:text-base lg:text-lg">{line.lyric}</pre>
           </div>
         );
       })}
