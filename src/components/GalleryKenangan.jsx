@@ -32,7 +32,6 @@ const Gallery = () => {
               effect={'coverflow'}
               grabCursor={true}
               centeredSlides={true}
-              slidesPerView={'auto'}
               autoplay={{
                 delay: 5000,
                 disableOnInteraction: false,
