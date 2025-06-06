@@ -1,8 +1,12 @@
-/* Menghilangkan margin dan padding di seluruh elemen */
+/* === BAGIAN 1: FONT & TAILWIND DIRECTIVES === */
+
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* === BAGIAN 2: GAYA DASAR HALAMAN === */
 
 html,
 body,
@@ -11,16 +15,44 @@ body,
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #fafafa;
 }
 
-* {
+/* Mengatur font default untuk seluruh aplikasi */
+body {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+/* === BAGIAN 3: OVERRIDE GAYA UNTUK LIBRARY EKSTERNAL (SWIPER.JS) === */
+
+/* --- Gaya Umum untuk Semua Pagination --- */
+.swiper-pagination-bullet {
+    background: #000000 !important;
+    opacity: 0.4;
+}
+.swiper-pagination-bullet-active {
+    background: #000000 !important;
+    opacity: 1;
+}
+
+/* --- Gaya Khusus untuk Slider di Halaman 'Tentang' (yang menggunakan kelas .mySwiper) --- */
+.mySwiper .swiper-slide {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.mySwiper .swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 10;
+}
+.mySwiper .swiper-slide:not(.swiper-slide-active) {
+    transform: scale(0.85);
+    opacity: 0.7;
+}
+
+/* --- Gaya Khusus untuk Slider di Modal Profil (yang menggunakan kelas .profile-swiper) --- */
 .profile-swiper .swiper-button-next,
 .profile-swiper .swiper-button-prev {
-    color: #000000; /* Warna panah navigasi */
+    color: #000000;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     width: 30px;
@@ -32,20 +64,7 @@ body,
     font-size: 14px;
     font-weight: bold;
 }
+/* Override warna pagination HANYA untuk modal profil */
 .profile-swiper .swiper-pagination-bullet-active {
-    background-color: #2100b1 !important; /* Warna pagination aktif */
-}
-
-/* Tambahkan di src/index.css */
-
-/* Mengubah warna titik pagination yang tidak aktif menjadi hitam transparan */
-.swiper-pagination-bullet {
-    background: #000000 !important;
-    opacity: 0.4;
-}
-
-/* Mengubah warna titik pagination yang aktif menjadi hitam solid */
-.swiper-pagination-bullet-active {
-    background: #000000 !important;
-    opacity: 1;
+    background-color: #2100b1 !important;
 }
