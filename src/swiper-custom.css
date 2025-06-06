@@ -1,0 +1,31 @@
+/* File: src/swiper-custom.css (VERSI FINAL & BERSIH) */
+
+.mySwiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mySwiper .swiper-slide {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    -webkit-box-reflect: below 1px
+        linear-gradient(transparent, transparent, #0006);
+}
+
+.mySwiper .swiper-slide:not(.swiper-slide-active) {
+    opacity: 0.6;
+    transform: scale(0.9);
+}
+
+.mySwiper .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.mySwiper .swiper-pagination-bullet {
+    background: #6b7280; /* abu-abu */
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+    background: #1f2937; /* abu-abu gelap */
+}

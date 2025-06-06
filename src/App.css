@@ -1,26 +1,7 @@
 /* Menghilangkan margin dan padding di seluruh elemen */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import "tailwindcss";
 
 * {
     font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    /* Menyembunyikan scroll jika ada overflow */
-    box-sizing: border-box;
-}
-
-#root {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
 }
