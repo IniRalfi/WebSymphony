@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components/HeaderFooter/Header.jsx";
-import Footer from "../components/HeaderFooter/Footer.jsx"
-import Gallery from "../components/GalleryKenangan/GalleryKenangan.jsx"
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx"
+import Gallery from "../components/GalleryKenangan.jsx"
 
 
 const GalleryKenangan = () => {

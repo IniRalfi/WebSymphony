@@ -92,7 +92,7 @@ const Navbar = () => {
           ['/', 'Beranda'],
           ['/#about', 'Tentang'],
           ['/lagu', 'Lagu'],
-          ['/gallery', 'Gallery'],
+          ['/gallery', 'Galeri'],
           ['/profile-mahasiswa', 'Profile Mahasiswa'],
         ].map(([path, label]) => (
           <li key={path}>

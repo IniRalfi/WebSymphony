@@ -17,3 +17,21 @@ body,
 * {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+.profile-swiper .swiper-button-next,
+.profile-swiper .swiper-button-prev {
+    color: #000000; /* Warna panah navigasi */
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+}
+.profile-swiper .swiper-button-next::after,
+.profile-swiper .swiper-button-prev::after {
+    font-size: 14px;
+    font-weight: bold;
+}
+.profile-swiper .swiper-pagination-bullet-active {
+    background-color: #2100b1 !important; /* Warna pagination aktif */
+}

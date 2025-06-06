@@ -1,8 +1,8 @@
 import React from "react";
 // import CardGallery from "../components/Card/CardGallery";
-import Header from "../components/HeaderFooter/Header.jsx";
-import Footer from "../components/HeaderFooter/Footer.jsx"
-import Profile from "../components/ProfileMahasiswa/ProfileMahasiswa.jsx";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx"
+import Profile from "../components/ProfileMahasiswa.jsx";
 
 const ProfileMahasiswa = () => {
   return (

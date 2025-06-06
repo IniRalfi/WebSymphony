@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import CircleGalley from '../components/CircleGallery';
 import AboutSymphony from '../components/AboutSymphony.jsx';
-import Footer from "../components/HeaderFooter/Footer.jsx"
+import Footer from "../components/Footer.jsx"
 
 const Home = () => {
   const location = useLocation()
