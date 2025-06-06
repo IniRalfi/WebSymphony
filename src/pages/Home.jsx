@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import CircleGalley from '../components/CircleGallery/CircleGallery';
+import CircleGalley from '../components/CircleGallery';
 import AboutSymphony from '../components/AboutSymphony.jsx';
 import Footer from "../components/HeaderFooter/Footer.jsx"
 
