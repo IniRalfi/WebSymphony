@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react"; // 1. Impor useRef
-const gambar1 = "/assets/logoSymphony.png";
+import gambar1 from "../assets/logoSymphony.png";
 
 function CircleGallery() {
    const [center, setCenter] = useState({ x: 0, y: 0 });

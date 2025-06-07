@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Impor useNavigate
-import logoSymphony from '/assets/logoSymphony.png';
-import logoHmsiUntan from '/assets/logoHmsiUntan.png';
-import starLeft from '/assets/bintang_kiri_atas.png';
-import starRight from '/assets/bintang_kanan_bawah.png';
+import logoSymphony from '../assets/logoSymphony.png';
+import logoHmsiUntan from '../assets/logoHmsiUntan.png';
+import starLeft from '../assets/bintang_kiri_atas.png';
+import starRight from '../assets/bintang_kanan_bawah.png';
 
 const Footer = () => {
-    const navigate = useNavigate(); // Inisialisasi useNavigate
+    const navigate = useNavigate();
 
     const handleAboutClick = (e) => {
         if (window.location.pathname === "/") {
