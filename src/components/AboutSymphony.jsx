@@ -22,10 +22,10 @@ const momenSlides = [
 ];
 
 const pengurusSlides = [
-    { title: 'Ketua angkatan', name: 'Rito Ramadhan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1746925666/IMG_9472_o9lxz0.jpg' },
-    { title: 'Wakil Ketua', name: 'Nama Wakil', imageUrl: 'https://via.placeholder.com/480x360?text=Foto+Wakil' },
-    { title: 'Sekretaris', name: 'Nama Sekretaris', imageUrl: 'https://via.placeholder.com/480x360?text=Foto+Sekretaris' },
-    { title: 'Bendahara', name: 'Nama Bendahara', imageUrl: 'https://via.placeholder.com/480x360?text=Foto+Bendahara' },
+    { title: 'Ketua angkatan', name: 'Rito Ramadhan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749272154/nrito_no_background_rwlhwt.png' },
+    { title: 'Bendahara 1', name: 'Nabila Nur Anisa', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271552/billa_yhegei.jpg' },
+    { title: 'Sekretaris', name: 'Jesika Tan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271629/Picsart_25-06-06_12-11-03-554_wjpore.png' },
+    { title: 'Bendahara 2', name: 'Virsya Meidina Andriadie', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271478/virsya_x9jry6.png' },
 ];
 
 const GallerySlider = ({ title, slides }) => {

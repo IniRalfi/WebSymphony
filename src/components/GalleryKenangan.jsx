@@ -37,7 +37,7 @@ const Gallery = () => {
                 rotate: 0,
                 stretch: 0,
                 depth: 100,
-                modifier: 1.5,
+                modifier: 1,
                 slideShadows: false,
                 scale: 0.85
               }}
@@ -46,7 +46,7 @@ const Gallery = () => {
               className="w-full h-full"
             >
               {item.photos.map((photo, index) => {
-                const placeholderSrc = photo.replace('/upload/', '/upload/q_auto:low,w_40/');
+                const placeholderSrc = photo.replace('/upload/', '/upload/q_auto:low,w_30/');
 
                 return (
                   <SwiperSlide key={index} className="!w-auto flex justify-center items-center pb-10">
