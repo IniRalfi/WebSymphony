@@ -12,7 +12,7 @@ const ProfileCard = ({ nama, nim, foto, onClick }) => {
 
   return (
     <div className="w-full cursor-pointer group" onClick={onClick}>
-      <div className="w-full h-[200px] rounded-lg overflow-hidden shadow-md">
+      <div className="w-full aspect-[3/4] rounded-lg overflow-hidden shadow-md bg-gray-200">
         <LazyLoadImage
           src={foto}
           alt={nama}
@@ -22,9 +22,9 @@ const ProfileCard = ({ nama, nim, foto, onClick }) => {
           onError={handleImageError}
         />
       </div>
-      <div className="pt-3 text-left">
-        <p className="text-xs text-gray-500 m-0">{nim}</p>
-        <h2 className="text-base font-semibold text-gray-900 m-0 mt-0.5">{nama}</h2>
+      <div className="pt-2 text-left">
+        <p className="text-xs text-gray-500 m-0 truncate">{nim}</p>
+        <h2 className="text-base font-semibold text-gray-900 m-0 truncate">{nama}</h2>
       </div>
     </div>
   );
