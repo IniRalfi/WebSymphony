@@ -1,65 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import logoSymphony from '../assets/logoSymphony.png';
+import { useNavigation } from './hooks/useNavigation';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
-
-  // LANGKAH 1: BUAT STATE BARU UNTUK MELACAK LINK AKTIF
-  // Kita inisialisasi dengan path saat ini + hash
-  const [activeLink, setActiveLink] = useState(location.pathname + location.hash);
-
   const isHome = location.pathname === "/";
 
-  // LANGKAH 2: PERBARUI SEMUA FUNGSI KLIK UNTUK MENG-UPDATE STATE
-  const handleAboutClick = (e) => {
-    e.preventDefault();
-    setActiveLink('/#about'); // Set link aktif secara manual
-    if (isHome) {
-      document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      navigate('/', { state: { scrollTo: 'about' } });
-    }
-    setOpen(false);
-  };
-
-  const handleHomeClick = () => {
-    setActiveLink('/'); // Set link aktif secara manual
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    setOpen(false);
-  };
-
-  const handleLinkClick = (path) => {
-    setActiveLink(path); // Set link aktif secara manual
-    setOpen(false);
-  }
-
-  // useEffects lainnya tetap sama...
-  useEffect(() => {
-    // Update activeLink jika user navigasi manual (misal pakai tombol back/forward browser)
-    setActiveLink(location.pathname + location.hash);
-  }, [location]);
-
-  useEffect(() => {
-    if (location.state?.scrollTo) {
-      const section = document.getElementById(location.state.scrollTo);
-      if (section) {
-        setTimeout(() => {
-          section.scrollIntoView({ behavior: 'smooth' });
-          setActiveLink('/#about');
-        }, 100);
-      }
-    }
-  }, [location.state]);
+  const { activeLink, handleAboutClick, handleHomeClick, handleLinkClick } = useNavigation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const closeMobileMenu = () => setOpen(false);
 
   const navBaseClasses = "w-full flex justify-between items-center px-4 md:px-8 py-3 fixed top-0 transition-all duration-300 ease-in-out";
   const navColorClasses = isHome
@@ -72,7 +30,7 @@ const Navbar = () => {
 
   return (
     <nav className={`${navBaseClasses} ${navColorClasses} z-50`}>
-      {/* ... bagian logo dan hamburger tetap sama ... */}
+
       <div className="text-lg font-bold flex items-center gap-2">
         <img src={logoSymphony} alt="Logo" className={`h-9 transition-all duration-300 ${scrolled && isHome ? 'invert' : ''}`} />
         Symphony
@@ -97,28 +55,24 @@ const Navbar = () => {
         ].map(([path, label]) => (
           <li key={path}>
             {label === 'Tentang' ? (
-              <a href={path} onClick={handleAboutClick}
-                // LANGKAH 3: GUNAKAN STATE BARU UNTUK MENENTUKAN KELAS
+              <a href={path}
+                onClick={(e) => { handleAboutClick(e); closeMobileMenu(); }}
                 className={activeLink === path ? navLinkActiveClass : ''}>
                 {label}
               </a>
             ) : label === 'Beranda' ? (
-              <NavLink
-                to={path}
-                end
-                onClick={handleHomeClick}
-                // GAYA AKTIF UNTUK BERANDA, HANYA AKTIF JIKA TIDAK ADA HASH
-                className={activeLink === '/' ? navLinkActiveClass : ''}
-              >
+              <NavLink to={path} end
+                onClick={() => { handleHomeClick(); closeMobileMenu(); }}
+                className={activeLink === '/' ? navLinkActiveClass : ''}>
                 {label}
               </NavLink>
-            )
-              : (
-                <NavLink to={path} end onClick={() => handleLinkClick(path)}
-                  className={activeLink === path ? navLinkActiveClass : ''}>
-                  {label}
-                </NavLink>
-              )}
+            ) : (
+              <NavLink to={path} end
+                onClick={() => { handleLinkClick(path); closeMobileMenu(); }}
+                className={activeLink === path ? navLinkActiveClass : ''}>
+                {label}
+              </NavLink>
+            )}
           </li>
         ))}
       </ul>

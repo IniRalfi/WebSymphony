@@ -1,22 +1,14 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Impor useNavigate
+import { Link } from 'react-router-dom';
+import { useNavigation } from './hooks/useNavigation';
 import logoSymphony from '../assets/logoSymphony.png';
 import logoHmsiUntan from '../assets/logoHmsiUntan.png';
 import starLeft from '../assets/bintang_kiri_atas.png';
 import starRight from '../assets/bintang_kanan_bawah.png';
 
 const Footer = () => {
-    const navigate = useNavigate();
-
-    const handleAboutClick = (e) => {
-        if (window.location.pathname === "/") {
-            e.preventDefault();
-            document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            e.preventDefault();
-            navigate('/', { state: { scrollTo: 'about' } });
-        }
-    };
+    const { activeLink, handleAboutClick, handleHomeClick, handleLinkClick } = useNavigation();
+    const activeClass = "font-extrabold"; // Kelas untuk link yang aktif
 
     return (
         <footer className="relative bg-[#2100b1] text-white px-4 py-8 md:py-12 overflow-hidden">
@@ -27,7 +19,7 @@ const Footer = () => {
                     <img src={logoSymphony} alt="Logo Symphony" className="max-w-[80px]" />
                 </div>
                 <div className="flex-1 basis-[250px] text-center md:text-left text-sm">
-                    <p className="my-1">Jl. Prof. Dr. Hidari Nawawi, Gdg. FMIPA Baru</p>
+                    <p className="my-1">Jl. Prof. Dr. Hadari Nawawi, Gdg. FMIPA Baru</p>
                     <p className="my-1">Telepon : (0561) 577963</p>
                     <p className="my-1">Email : sisfo@untan.ac.id</p>
                 </div>
@@ -38,12 +30,49 @@ const Footer = () => {
 
 
             <div className="relative z-10 mt-8 flex justify-center gap-4 md:gap-6 flex-wrap max-w-7xl mx-auto">
-                <Link to="/" className="font-medium transition-opacity hover:opacity-80 active:font-extrabold">Beranda</Link>
-                <a href="/#about" onClick={handleAboutClick} className="font-medium transition-opacity hover:opacity-80 active:font-extrabold">Tentang</a>
-                <Link to="/gallery" className="font-medium transition-opacity hover:opacity-80 active:font-extrabold">Galeri</Link>
-                <Link to="/profile-mahasiswa" className="font-medium transition-opacity hover:opacity-80 active:font-extrabold">Profile Mahasiswa</Link>
-                <Link to="/lagu" className="font-medium transition-opacity hover:opacity-80 active:font-extrabold">Lagu-lagu</Link>
-                <a href="https://instagram.com/the.symphony24" target="_blank" rel="noopener noreferrer" className="font-medium transition-opacity hover:opacity-80 active:font-extrabold">Instagram</a>
+                <Link
+                    to="/"
+                    className={`font-medium transition-opacity hover:opacity-80 ${activeLink === '/' ? activeClass : ''}`}
+                    onClick={handleHomeClick}
+                >
+                    Beranda
+                </Link>
+
+                <a
+                    href="/#about"
+                    onClick={handleAboutClick}
+                    className={`font-medium transition-opacity hover:opacity-80 ${activeLink === '/#about' ? activeClass : ''}`}
+                >
+                    Tentang
+                </a>
+
+                <Link
+                    to="/lagu"
+                    onClick={() => handleLinkClick('/lagu')}
+                    className={`font-medium transition-opacity hover:opacity-80 ${activeLink === '/lagu' ? activeClass : ''}`}
+                >
+                    Lagu
+                </Link>
+
+                <Link
+                    to="/gallery"
+                    onClick={() => handleLinkClick('/gallery')}
+                    className={`font-medium transition-opacity hover:opacity-80 ${activeLink === '/gallery' ? activeClass : ''}`}
+                >
+                    Galeri
+                </Link>
+
+                <Link
+                    to="/profile-mahasiswa"
+                    onClick={() => handleLinkClick('/profile-mahasiswa')}
+                    className={`font-medium transition-opacity hover:opacity-80 ${activeLink === '/profile-mahasiswa' ? activeClass : ''}`}
+                >
+                    Profile Mahasiswa
+                </Link>
+
+                <a href="https://instagram.com/the.symphony24" target="_blank" rel="noopener noreferrer" className="font-medium transition-opacity hover:opacity-80">
+                    Instagram
+                </a>
             </div>
         </footer>
     );
