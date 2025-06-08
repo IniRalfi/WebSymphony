@@ -32,13 +32,13 @@ const Navbar = () => {
     <nav className={`${navBaseClasses} ${navColorClasses} z-50`}>
 
       <div className="text-lg font-bold flex items-center gap-2">
-        <img src={logoSymphony} alt="Logo" className={`h-9 transition-all duration-300 ${scrolled && isHome ? 'invert' : ''}`} />
+        <img src={logoSymphony} alt="Logo" className={`h-9 transition-all duration-300 ${scrolled ? 'invert' : ''}`} />
         Symphony
       </div>
       <div className={`group md:hidden flex flex-col gap-1.5 cursor-pointer ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>
-        <div className={`w-6 h-0.5 transition-all duration-300 ${(scrolled || !isHome) && !open ? 'bg-black' : 'bg-white'} group-[.open]:rotate-45 group-[.open]:translate-y-2`}></div>
-        <div className={`w-6 h-0.5 transition-all duration-300 ${(scrolled || !isHome) && !open ? 'bg-black' : 'bg-white'} group-[.open]:opacity-0`}></div>
-        <div className={`w-6 h-0.5 transition-all duration-300 ${(scrolled || !isHome) && !open ? 'bg-black' : 'bg-white'} group-[.open]:-rotate-45 group-[.open]:-translate-y-2`}></div>
+        <div className={`w-6 h-0.5 transition-all duration-300 ${(scrolled) ? 'bg-black' : 'bg-white'} group-[.open]:rotate-45 group-[.open]:translate-y-2`}></div>
+        <div className={`w-6 h-0.5 transition-all duration-300 ${(scrolled) ? 'bg-black' : 'bg-white'} group-[.open]:opacity-0`}></div>
+        <div className={`w-6 h-0.5 transition-all duration-300 ${(scrolled) ? 'bg-black' : 'bg-white'} group-[.open]:-rotate-45 group-[.open]:-translate-y-2`}></div>
       </div>
 
       <ul className={`

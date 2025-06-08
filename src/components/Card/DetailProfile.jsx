@@ -18,8 +18,8 @@ const DetailProfile = ({ mahasiswa, onClose, onPrev, onNext }) => {
         className="relative bg-white rounded-lg overflow-hidden w-full max-w-md sm:max-w-lg md:max-w-3xl max-h-screen overflow-y-auto my-auto md:my-8"
         onClick={(e) => e.stopPropagation()}
       >
-        <button onClick={onClose} aria-label="Close profile" className="absolute top-2 right-2 z-20 bg-black/50 text-white w-8 h-8 rounded-full text-lg cursor-pointer flex items-center justify-center hover:bg-black">
-          &times;
+        <button onClick={onClose} aria-label="Close profile" className="absolute top-2 right-2 z-20 bg-black/80 text-white w-8 h-8 rounded-full text-lg cursor-pointer flex items-center justify-center hover:bg-black">
+          x
         </button>
 
         {/* 3. Pembungkus flex tidak lagi butuh max-h */}
@@ -62,8 +62,9 @@ const DetailProfile = ({ mahasiswa, onClose, onPrev, onNext }) => {
               <p className="italic">"{mahasiswa.quotes}"</p>
             </div>
             <div className="mt-auto pt-4">
-              <a href={`https://instagram.com/${mahasiswa.instagram}`} target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80">
-                <img src="https://res.cloudinary.com/iniralfi/image/upload/v1747568076/instagram_tn03rt.png" alt="Instagram" className="w-8 h-8" />
+              <a href={`https://instagram.com/${mahasiswa.instagram}`} target="_blank" rel="noopener noreferrer" className="flex justify-center justify-items-stretch hover:opacity-80">
+                <img src="https://res.cloudinary.com/iniralfi/image/upload/v1747568076/instagram_tn03rt.png" alt="Instagram" className=" w-6 h-6" />
+                <p className='mx-2 text-sm'>  @{mahasiswa.instagram}</p>
               </a>
             </div>
           </div>
