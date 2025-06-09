@@ -6,11 +6,14 @@ import Lagu from './pages/Lagu';
 import ProfileMahasiswa from './pages/ProfileMahasiswa';
 import Gallery from "./pages/Gallery";
 
+
+import ScrollToTop from './components/scrollToTop';
 function App() {
   return (
 
     <Router>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tentang" element={<Home />} />

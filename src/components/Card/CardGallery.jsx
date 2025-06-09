@@ -2,12 +2,12 @@ import React from 'react';
 
 const CardGallery = ({ title, name, imageUrl, className }) => {
   return (
-    <div className={`w-[90%] md:w-[600px] mx-auto h-full flex flex-col rounded-lg shadow-lg overflow-hidden flex-shrink-0 bg-white ${className}`}>
+    <div className={`w-[90%] md:w-[600px] mx-auto h-full flex flex-col rounded-lg shadow-xl overflow-hidden flex-shrink-0 bg-white ${className}`}>
       <div className="w-full h-[160px] md:h-[320px] overflow-hidden">
         <img
           src={imageUrl}
           alt={title}
-          className="w-full h-full object-cover" // object-cover adalah kunci
+          className="w-full h-full object-cover"
         />
       </div>
 
