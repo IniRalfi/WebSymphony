@@ -61,7 +61,7 @@ function CircleGallery() {
          </div>
 
          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center text-xs md:text-base whitespace-nowrap">
-            <span className="mx-1">Symphony, </span>
+            <span className="mx-3">Symphony,</span>
             {words.map((word, index) => (
                <span key={index} className="absolute left-0 right-0">
                   <span className={`font-bold underline decoration-white decoration-1 transition-opacity duration-500 ease-in-out ${currentWordIndex === index ? 'opacity-100' : 'opacity-0'}`}>
