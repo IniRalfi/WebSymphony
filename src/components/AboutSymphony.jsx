@@ -10,8 +10,6 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import '../swiper-custom.css';
 
-// Komponen CardGallery tidak lagi kita gunakan di sini, tapi jangan dihapus filenya
-// import CardGallery from './card/CardGallery'; 
 
 const momenSlides = [
     // { title: 'Ketua angkatan', name: 'Rito Ramadhan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1746925666/IMG_9472_o9lxz0.jpg' },
