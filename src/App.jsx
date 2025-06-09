@@ -5,12 +5,12 @@ import Home from './pages/Home';
 import Lagu from './pages/Lagu';
 import ProfileMahasiswa from './pages/ProfileMahasiswa';
 import Gallery from "./pages/Gallery";
+import { Analytics } from '@vercel/analytics/react';
 
 
 import ScrollToTop from './components/scrollToTop';
 function App() {
   return (
-
     <Router>
       <Navbar />
       <ScrollToTop />
@@ -21,6 +21,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/profile-mahasiswa" element={<ProfileMahasiswa />} />
       </Routes>
+      <Analytics />
     </Router>
   );
 }
