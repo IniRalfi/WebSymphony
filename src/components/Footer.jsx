@@ -18,7 +18,7 @@ const Footer = () => {
                 <div className="flex-1 basis-[250px] flex justify-center md:justify-start">
                     <img src={logoSymphony} alt="Logo Symphony" className="max-w-[80px]" />
                 </div>
-                <div className="flex-1 basis-[250px] text-center md:text-left text-sm">
+                <div className="flex-1 basis-[250px] text-center text-sm">
                     <p className="my-1">Jl. Prof. Dr. Hadari Nawawi, Gdg. FMIPA Baru</p>
                     <p className="my-1">Telepon : (0561) 577963</p>
                     <p className="my-1">Email : sisfo@untan.ac.id</p>
