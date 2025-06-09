@@ -16,8 +16,8 @@ const ProfileCard = ({ nama, nim, foto, onClick }) => {
         <LazyLoadImage
           src={foto}
           alt={nama}
-          placeholderSrc={placeholderSrc} // Prop ini sekarang akan berfungsi
-          effect="blur"                   // Prop ini juga akan berfungsi
+          placeholderSrc={placeholderSrc}
+          effect="blur"
           className="w-full h-full object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-110"
           onError={handleImageError}
         />

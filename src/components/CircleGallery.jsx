@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react"; // 1. Impor useRef
+import React, { useEffect, useState, useRef } from "react";
 import gambar1 from "../assets/logoSymphony.png";
 
 function CircleGallery() {

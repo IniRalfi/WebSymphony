@@ -1,5 +1,4 @@
 import React from "react";
-// import CardGallery from "../components/Card/CardGallery";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx"
 import Profile from "../components/ProfileMahasiswa.jsx";

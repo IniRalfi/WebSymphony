@@ -9,7 +9,6 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
-// 1. Path impor diperbarui karena file JSON sekarang ada di 'src'
 import galleryData from '../database/data_gallery.json'
 
 const Gallery = () => {
@@ -50,7 +49,6 @@ const Gallery = () => {
 
                 return (
                   <SwiperSlide key={index} className="!w-auto flex justify-center items-center pb-10">
-                    {/* Perbaikan #2: Hapus div pembungkus dan terapkan kelas langsung di sini */}
                     <LazyLoadImage
                       alt={`${item.title} - Foto ${index + 1}`}
                       src={photo}

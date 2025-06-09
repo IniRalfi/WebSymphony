@@ -12,7 +12,6 @@ const DetailProfile = ({ mahasiswa, onClose, onPrev, onNext }) => {
   if (!mahasiswa) return null;
 
   return (
-    // 1. Overlay sekarang punya overflow-y-auto dan padding
     <div className="fixed inset-0 z-[99] bg-black/70 flex justify-center items-start md:items-center p-10 sm:p-4 overflow-y-auto modal-overlay" onClick={onClose}>
       <div
         className="relative bg-white rounded-lg overflow-hidden w-full max-w-md sm:max-w-lg md:max-w-3xl max-h-screen overflow-y-auto my-auto md:my-8"
@@ -22,10 +21,7 @@ const DetailProfile = ({ mahasiswa, onClose, onPrev, onNext }) => {
           x
         </button>
 
-        {/* 3. Pembungkus flex tidak lagi butuh max-h */}
         <div className="flex flex-col md:flex-row">
-
-          {/* 4. Kolom gambar tidak lagi butuh h-[45%] */}
           <div className="w-full md:w-2/5 p-4">
             <Swiper
               modules={[Pagination, Autoplay]}
@@ -52,7 +48,6 @@ const DetailProfile = ({ mahasiswa, onClose, onPrev, onNext }) => {
             </Swiper>
           </div>
 
-          {/* 5. Kolom info tidak lagi butuh styling tinggi yang rumit */}
           <div className="w-full md:w-3/5 p-5 flex flex-col justify-between">
 
             <h2 className="text-xl md:text-2xl font-bold mb-4 text-gray-800">Symphony 2024</h2>

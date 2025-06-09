@@ -12,7 +12,6 @@ import '../swiper-custom.css';
 
 
 const momenSlides = [
-    // { title: 'Ketua angkatan', name: 'Rito Ramadhan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1746925666/IMG_9472_o9lxz0.jpg' },
     { title: 'Logo Angkatan', name: 'Symphony', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263524/Symphony_s1ucn9.png' },
     { title: 'Hand Sign - Depan', name: '', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263525/HandSignFront_wa6m3z.png' },
     { title: 'Hand Sign - Belakang', name: '', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263526/HandSignBack_n0a7ny.png' },
@@ -45,16 +44,14 @@ const GallerySlider = ({ title, slides }) => {
                     slideShadows: true,
                 }}
                 pagination={{ clickable: true }}
-                className='mySwiper py-10' // Beri padding vertikal untuk shadow
+                className='mySwiper py-10'
             >
                 {slides.map((slide, idx) => {
                     const placeholderSrc = slide.imageUrl.replace('/upload/', '/upload/q_auto:low,w_40/');
 
                     return (
                         <SwiperSlide key={idx} className='!w-auto'>
-                            {/* INI DIA KARTU PEMBUNGKUS BARUNYA */}
                             <div className="w-[260px] sm:w-[320px] md:w-[400px] bg-white rounded-lg shadow-lg overflow-hidden p-3 transition-all duration-300">
-                                {/* Gambar dengan aspect-ratio di dalamnya */}
                                 <LazyLoadImage
                                     alt={slide.title}
                                     src={slide.imageUrl}

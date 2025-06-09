@@ -23,7 +23,6 @@ const GalleryMahasiswa = () => {
         <p>{studentsData.length} Mahasiswa</p>
       </div>
 
-      {/* .gallery-grid -> menggunakan arbitrary value untuk grid canggih */}
       <div className="grid grid-cols-[repeat(auto-fit,minmax(160px,1fr))] gap-5">
         {studentsData.map((student, index) => {
           return (
@@ -44,7 +43,6 @@ const GalleryMahasiswa = () => {
         <p>Tak kenal maka tak sayang</p>
       </div>
 
-      {/* Bagian Modal/Detail, logikanya tetap sama */}
       {selectedIndex !== null && (
         <DetailProfile
           mahasiswa={studentsData[selectedIndex]}
