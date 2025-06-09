@@ -1,12 +1,8 @@
-/* === BAGIAN 1: FONT & TAILWIND DIRECTIVES === */
-
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* === BAGIAN 2: GAYA DASAR HALAMAN === */
 
 html,
 body,
@@ -15,17 +11,13 @@ body,
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #fcfcfc;
+    background-color: #ffffff;
 }
 
-/* Mengatur font default untuk seluruh aplikasi */
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-/* === BAGIAN 3: OVERRIDE GAYA UNTUK LIBRARY EKSTERNAL (SWIPER.JS) === */
-
-/* --- Gaya Umum untuk Semua Pagination --- */
 .swiper-pagination-bullet {
     background: #000000 !important;
     opacity: 0.4;
@@ -35,7 +27,6 @@ body {
     opacity: 1;
 }
 
-/* --- Gaya Khusus untuk Slider di Halaman 'Tentang' (yang menggunakan kelas .mySwiper) --- */
 .mySwiper .swiper-slide {
     transition: transform 0.4s ease, opacity 0.4s ease;
 }
@@ -64,38 +55,29 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
-/* Override warna pagination HANYA untuk modal profil */
+
 .profile-swiper .swiper-pagination-bullet-active {
     background-color: #2100b1 !important;
 }
 
-/* Tambahkan di src/index.css */
-
-/* Gaya Kustom untuk Scrollbar di Modal */
 .modal-overlay::-webkit-scrollbar {
     width: 10px; /* Lebar scrollbar */
 }
 
 /* Bagian rel atau jalur scrollbar */
 .modal-overlay::-webkit-scrollbar-track {
-    background: transparent; /* Biarkan transparan agar menyatu dengan latar */
+    background: transparent;
 }
 
-/* Bagian 'pegangan' scrollbar yang bisa diseret */
 .modal-overlay::-webkit-scrollbar-thumb {
-    background-color: rgba(
-        255,
-        255,
-        255,
-        0.4
-    ); /* Warna scrollbar-nya (putih transparan) */
-    border-radius: 20px; /* Membuat ujungnya membulat */
-    border: 3px solid transparent; /* Trik untuk memberi padding di sekitar thumb */
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    border: 3px solid transparent;
     background-clip: content-box;
 }
 
 .modal-overlay::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.6); /* Warna saat di-hover */
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .modal-overlay {
