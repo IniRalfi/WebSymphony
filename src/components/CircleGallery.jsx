@@ -33,9 +33,9 @@ function CircleGallery() {
       return () => clearInterval(interval);
    }, [words.length]);
 
-   const radius = isMobile ? 150 : 250;
+   const radius = isMobile ? 150 : 280;
    const imageSize = isMobile ? 20 : 28;
-   const totalImages = isMobile ? 16 : 28;
+   const totalImages = isMobile ? 16 : 24;
    const images = Array.from({ length: totalImages }, () => gambar1);
 
    return (
