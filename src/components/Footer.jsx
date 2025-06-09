@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useNavigation } from './hooks/useNavigation';
+import { useNavigation } from '../hooks/useNavigation';
 import logoSymphony from '../assets/logoSymphony.png';
 import logoHmsiUntan from '../assets/logoHmsiUntan.png';
 import starLeft from '../assets/bintang_kiri_atas.png';
