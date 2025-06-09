@@ -31,6 +31,10 @@ export const useNavigation = () => {
   };
 
   useEffect(() => {
+    setActiveLink(location.pathname + location.hash);
+  }, [location]);
+
+  useEffect(() => {
     if (location.state?.scrollTo) {
       const section = document.getElementById(location.state.scrollTo);
       if (section) {
