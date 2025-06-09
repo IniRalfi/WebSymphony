@@ -16,13 +16,21 @@ const momenSlides = [
     { title: 'Hand Sign - Depan', name: '', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263525/HandSignFront_wa6m3z.png' },
     { title: 'Hand Sign - Belakang', name: '', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263526/HandSignBack_n0a7ny.png' },
     { title: 'Tempat Favorit', name: 'Lab Sisfo', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263524/LabSisfo_wkz1hg.jpg' },
+    { title: 'Logo Angkatan', name: 'Symphony', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263524/Symphony_s1ucn9.png' },
+    { title: 'Hand Sign - Depan', name: '', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263525/HandSignFront_wa6m3z.png' },
+    { title: 'Hand Sign - Belakang', name: '', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263526/HandSignBack_n0a7ny.png' },
+    { title: 'Tempat Favorit', name: 'Lab Sisfo', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263524/LabSisfo_wkz1hg.jpg' },
 ];
 
 const pengurusSlides = [
     { title: 'Ketua angkatan', name: 'Rito Ramadhan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749272154/nrito_no_background_rwlhwt.png' },
     { title: 'Bendahara 1', name: 'Nabila Nur Anisa', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271552/billa_yhegei.jpg' },
-    { title: 'Sekretaris', name: 'Jesika Tan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271629/Picsart_25-06-06_12-11-03-554_wjpore.png' },
     { title: 'Bendahara 2', name: 'Virsya Meidina Andriadie', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271478/virsya_x9jry6.png' },
+    { title: 'Sekretaris', name: 'Jesika Tan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271629/Picsart_25-06-06_12-11-03-554_wjpore.png' },
+    { title: 'Ketua angkatan', name: 'Rito Ramadhan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749272154/nrito_no_background_rwlhwt.png' },
+    { title: 'Bendahara 1', name: 'Nabila Nur Anisa', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271552/billa_yhegei.jpg' },
+    { title: 'Bendahara 2', name: 'Virsya Meidina Andriadie', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271478/virsya_x9jry6.png' },
+    { title: 'Sekretaris', name: 'Jesika Tan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271629/Picsart_25-06-06_12-11-03-554_wjpore.png' },
 ];
 
 const GallerySlider = ({ title, slides }) => {
@@ -31,27 +39,28 @@ const GallerySlider = ({ title, slides }) => {
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-800">{title}</h2>
             <Swiper
                 modules={[EffectCoverflow, Pagination, Autoplay]}
-                effect={'coverflow'}
+                // effect={'coverflow'}
                 loop={true}
                 grabCursor={true}
                 centeredSlides={true}
                 slidesPerView={'auto'}
-                coverflowEffect={{
-                    rotate: 0,
-                    stretch: -50,
-                    depth: 100,
-                    modifier: 2,
-                    slideShadows: true,
-                }}
+                // coverflowEffect={{
+                //     rotate: 0,
+                //     stretch: -50,
+                //     depth: 100,
+                //     modifier: 2,
+                //     slideShadows: true,
+                // }}
                 pagination={{ clickable: true }}
-                className='mySwiper py-10'
+                className='mySwiper py-10 px-0'
+                spaceBetween={20}
             >
                 {slides.map((slide, idx) => {
                     const placeholderSrc = slide.imageUrl.replace('/upload/', '/upload/q_auto:low,w_40/');
 
                     return (
                         <SwiperSlide key={idx} className='!w-auto'>
-                            <div className="w-[260px] sm:w-[320px] md:w-[400px] bg-white rounded-lg shadow-lg overflow-hidden p-3 transition-all duration-300">
+                            <div className="w-[260px] sm:w-[320px] md:w-[400px] bg-white rounded-lg shadow-lg overflow-hidden p-3 transition-all duration-300 ">
                                 <LazyLoadImage
                                     alt={slide.title}
                                     src={slide.imageUrl}
@@ -82,7 +91,7 @@ const AboutSymphony = () => {
                 Symphony bukan sekadar nama, melainkan harmoni dari individu yang bergerak dengan satu irama. Kami adalah angkatan 2024 Sistem Informasi, generasi baru yang tumbuh di tengah derasnya arus teknologi dan informasi. Di balik setiap baris kode, ada semangat belajar yang tak pernah padam. Di setiap diskusi dan kolaborasi, lahir ide-ide brilian yang membentuk masa depan. Bersama, kami membangun sistem yang tidak hanya cerdas (smart), tetapi juga terhubung dengan kekuatan sinergi (synergy). Kami percaya bahwa teknologi adalah alat, tetapi manusialah yang menjadikannya bermakna. Dan di sinilah kami berdiri — saling mendukung, saling menguatkan, dan saling terhubung dalam satu visi. Symphony adalah bukti bahwa ketika pikiran-pikiran hebat berpadu, lahirlah sebuah karya besar yang siap mengubah dunia.
             </p>
             <div className="w-full max-w-7xl my-8 px-4">
-                <GallerySlider title="Momen Berharga" slides={momenSlides} />
+                <GallerySlider title="Identitas Kami" slides={momenSlides} />
                 <GallerySlider title="Pengurus Kelas" slides={pengurusSlides} />
             </div>
             <h2 className="text-lg md:text-xl mt-8 text-center font-semibold italic text-gray-700">"Smart System, Strong Synergy"</h2>

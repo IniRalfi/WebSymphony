@@ -9,6 +9,8 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
+import '../swiper-custom.css';
+
 const LazySwiperGallery = ({ item }) => {
   const [isInView, setIsInView] = useState(false);
   const placeholderRef = useRef();
@@ -46,7 +48,7 @@ const LazySwiperGallery = ({ item }) => {
   }
 
   return (
-    <div ref={placeholderRef} className="w-full max-w-3xl bg-white rounded-xl p-4 sm:p-6 mb-8 sm:mb-12 shadow-xl flex flex-col items-center overflow-hidden">
+    <div ref={placeholderRef} className="w-full max-w-6xl bg-white rounded-xl p-4 sm:p-6 mb-8 sm:mb-12 shadow-xl flex flex-col items-center overflow-hidden">
       <div className="w-full text-center mb-6">
         <h3 className="text-2xl sm:text-3xl text-gray-800 mb-2 font-semibold">{item.title}</h3>
         <span className="text-gray-500 text-sm">{new Date(item.date).toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
@@ -57,18 +59,19 @@ const LazySwiperGallery = ({ item }) => {
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={'auto'}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-            scale: 0.85
-          }}
+          // coverflowEffect={{
+          //   rotate: 0,
+          //   stretch: 0,
+          //   depth: 100,
+          //   modifier: 1,
+          //   slideShadows: false,
+          //   scale: 0.85
+          // }}
           pagination={{ clickable: true }}
           modules={[EffectCoverflow, Pagination, Autoplay]}
-          className="w-full h-full"
-          spaceBetween={50}
+          className="w-full h-full mySwiper"
+          spaceBetween={25}
+          loop={true}
         >
           {item.photos.map((photo, index) => {
             const placeholderSrc = photo.replace('/upload/', '/upload/q_auto:low,w_30/');

@@ -11,7 +11,7 @@ const GalleryKenangan = () => {
 
   return (
     <div >
-      <Header />
+      <Header label='Galeri Symphony' title='Kenangan Kami' />
       <div className="w-full max-w-7xl mx-auto px-2 sm:px-4 py-8 flex flex-col items-center">
         {galleryData.map((item) => (
           <Gallery key={item.id} item={item} />

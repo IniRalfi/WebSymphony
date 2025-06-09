@@ -6,7 +6,7 @@ import Profile from "../components/ProfileMahasiswa.jsx";
 const ProfileMahasiswa = () => {
   return (
     <div>
-      <Header />
+      <Header label='Profile Mahasiswa' title='Mahasiswa Symphony' />
       <Profile />
       <Footer />
     </div>

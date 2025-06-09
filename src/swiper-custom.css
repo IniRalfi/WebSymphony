@@ -8,8 +8,8 @@
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 .mySwiper .swiper-slide:not(.swiper-slide-active) {
-    opacity: 0.6;
-    transform: scale(0.9);
+    opacity: 0.5;
+    transform: scale(0.5);
 }
 
 .mySwiper .swiper-slide-active {
