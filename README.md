@@ -39,29 +39,24 @@ Website ini menampilkan profil mahasiswa, dokumentasi kegiatan, lagu angkatan, s
 ## 🚀 Cara Menjalankan di Lokal
 
 1. Clone repository ini:
+
     ```bash
     git clone https://github.com/IniRalfi/WebSymphony
     cd WebSymphony
-    Install dependensi:
+
     ```
 
-bash
-Salin
-Edit
-npm install
-Jalankan server lokal:
+    ```Install dependensi:
+    npm install
+    ```
 
-bash
-Salin
-Edit
-npm run dev
-Akses proyek melalui:
+    ```npm run dev
+    Akses proyek melalui:
+    http://localhost:5173/
+    ```
 
-arduino
-Salin
-Edit
-http://localhost:5173/
-✅ Website ini juga telah dideploy di Vercel, kunjungi: https://symphony24.vercel.app
+✅ Website ini juga telah dideploy di Vercel,
+kunjungi: https://symphony24.vercel.app
 
 👥 Tim Pengembang
 WebSymphony dikembangkan oleh para mahasiswa angkatan Symphony dengan pembagian tugas sebagai berikut:
@@ -100,3 +95,10 @@ Proyek ini bersifat terbuka dan dapat dimodifikasi untuk pembelajaran atau penge
 
 Smart System, Strong Synergy
 Symphony 2024 – Sistem Informasi UNTAN
+
+````
+
+```
+
+```
+````
