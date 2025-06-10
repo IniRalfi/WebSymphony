@@ -23,7 +23,7 @@ const GalleryMahasiswa = () => {
         <p>{studentsData.length} Mahasiswa</p>
       </div>
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(160px,1fr))] gap-5">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-5">
         {studentsData.map((student, index) => {
           return (
             // gallery item
