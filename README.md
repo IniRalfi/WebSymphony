@@ -46,11 +46,13 @@ Website ini menampilkan profil mahasiswa, dokumentasi kegiatan, lagu angkatan, s
 
     ```
 
-    ```Install dependensi:
+    ```
+    Install dependensi:
     npm install
     ```
 
-    ```npm run dev
+    ```
+    npm run dev
     Akses proyek melalui:
     http://localhost:5173/
     ```
