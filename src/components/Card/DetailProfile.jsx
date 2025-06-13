@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay, Navigation } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -12,7 +12,7 @@ const DetailProfile = ({ mahasiswa, onClose, onPrev, onNext }) => {
   if (!mahasiswa) return null;
 
   return (
-    <div className="fixed inset-0 z-[99] bg-black/70 flex justify-center items-start md:items-center p-10 sm:p-4 overflow-y-auto modal-overlay" onClick={onClose}>
+    <div className="h-[100svh] fixed inset-0 z-[99] bg-black/70 flex justify-center items-start md:items-center p-10 sm:p-4 overflow-y-auto modal-overlay" onClick={onClose}>
       <div
         className="relative bg-white rounded-lg overflow-hidden w-full max-w-md sm:max-w-lg md:max-w-3xl max-h-screen overflow-y-auto my-auto md:my-8"
         onClick={(e) => e.stopPropagation()}
@@ -26,7 +26,6 @@ const DetailProfile = ({ mahasiswa, onClose, onPrev, onNext }) => {
             <Swiper
               modules={[Pagination, Autoplay]}
               slidesPerView={1}
-              // pagination={{ clickable: true }}
               autoplay={{ delay: 2000, disableOnInteraction: false }}
               loop
               className="profile-swiper w-full h-full rounded-lg"
