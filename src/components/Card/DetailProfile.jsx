@@ -46,7 +46,7 @@ const DetailProfile = ({ mahasiswa, onClose }) => {
                 );
                 const optimalSrc = src.replace(
                   '/upload/',
-                  '/upload/w_400,q_auto:low,f_auto/'
+                  '/upload/w_400,q_auto,f_auto/'
                 );
                 return (
                   <SwiperSlide key={i}>
