@@ -6,15 +6,17 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const ProfileCard = ({ nama, nim, foto, onClick }) => {
   const handleImageError = (e) => {
     e.target.onerror = null;
-    e.target.src = "https://via.placeholder.com/200x250/ccc/fff?text=No+Image";
+    e.target.src = "https://via.placeholder.com/200x266/ccc/fff?text=No+Image";
+
   };
-  const placeholderSrc = foto.replace('/upload/', '/upload/q_auto:low,w_20/')
+  const placeholderSrc = foto.replace('/upload/', '/upload/w_20,e_blur:1000,q_1,f_auto/');
+  const optimizedSrc = foto.replace('/upload/', '/upload/w_400,f_auto,q_auto/');
 
   return (
     <div className="w-full cursor-pointer group" onClick={onClick}>
       <div className="w-full aspect-[3/4] rounded-lg overflow-hidden shadow-md bg-gray-200">
         <LazyLoadImage
-          src={foto}
+          src={optimizedSrc}
           alt={nama}
           placeholderSrc={placeholderSrc}
           effect="blur"

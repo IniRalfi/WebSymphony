@@ -27,17 +27,18 @@ const DetailProfile = ({ mahasiswa, onClose, onPrev, onNext }) => {
               modules={[Pagination, Autoplay]}
               slidesPerView={1}
               // pagination={{ clickable: true }}
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              autoplay={{ delay: 2000, disableOnInteraction: false }}
               loop
               className="profile-swiper w-full h-full rounded-lg"
             >
               {mahasiswa.foto.map((src, i) => {
-                const placeholderSrc = src.replace('/upload/', '/upload/q_auto:low,w_40/');
+                const placeholderSrc = src.replace('/upload/', '/upload/w_10,e_blur:1000,q_1,f_auto/');
+                const optimalSrc = src.replace('/upload/', '/upload/w_400,q_auto:low,f_auto/');
                 return (
                   <SwiperSlide key={i}>
                     <LazyLoadImage
                       alt={`Foto ${mahasiswa.nama} ${i + 1}`}
-                      src={src}
+                      src={optimalSrc}
                       placeholderSrc={placeholderSrc}
                       effect="blur"
                       className="w-full h-full object-cover"

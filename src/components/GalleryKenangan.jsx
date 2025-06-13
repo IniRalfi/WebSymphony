@@ -72,17 +72,20 @@ const LazySwiperGallery = ({ item }) => {
           className="w-full h-full mySwiper"
           spaceBetween={25}
           loop={true}
+          loopFillGroupWithBlank={true}
         >
           {item.photos.map((photo, index) => {
-            const placeholderSrc = photo.replace('/upload/', '/upload/q_auto:low,w_30/');
+            const placeholderSrc = photo.replace('/upload/', '/upload/w_20,e_blur:1000,q_1,f_auto/');
+            const optimizedPhoto = photo.replace('/upload/', '/upload/w_600,f_auto,q_auto/')
             return (
               <SwiperSlide key={index} className="!w-auto flex justify-center items-center pb-10">
                 <LazyLoadImage
                   alt={`${item.title} - Foto ${index + 1}`}
-                  src={photo}
+                  src={optimizedPhoto}
                   placeholderSrc={placeholderSrc}
                   effect="blur"
                   className="group w-[260px] sm:w-[280px] md:w-[360px] aspect-[4/3] bg-gray-200 rounded-lg shadow-md object-cover object-center transition-transform duration-300 ease-in-out hover:shadow-stone-900"
+                  threshold={200}
                 />
               </SwiperSlide>
             );

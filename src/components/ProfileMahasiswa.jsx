@@ -6,15 +6,6 @@ import DetailProfile from "./Card/DetailProfile";
 
 const GalleryMahasiswa = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
-
-  const handlePrev = () => {
-    setSelectedIndex((prev) => (prev - 1 + students.length) % students.length);
-  };
-
-  const handleNext = () => {
-    setSelectedIndex((prev) => (prev + 1) % students.length);
-  };
-
   return (
     // .gallery-container
     <div className="bg-white p-5 text-center">
@@ -47,8 +38,6 @@ const GalleryMahasiswa = () => {
         <DetailProfile
           mahasiswa={studentsData[selectedIndex]}
           onClose={() => setSelectedIndex(null)}
-          onPrev={handlePrev}
-          onNext={handleNext}
         />
       )}
     </div>
