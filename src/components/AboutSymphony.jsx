@@ -56,14 +56,14 @@ const GallerySlider = ({ title, slides }) => {
                 spaceBetween={20}
             >
                 {slides.map((slide, idx) => {
-                    const placeholderSrc = slide.imageUrl.replace('/upload/', '/upload/q_auto:low,w_40/');
-
+                    const placeholderSrc = slide.imageUrl.replace('/upload/', '/upload/q_auto:low,w_20/');
+                    const optimizedImage = slide.imageUrl.replace('/upload/', '/upload/w_400,f_auto,q_auto/');
                     return (
                         <SwiperSlide key={idx} className='!w-auto'>
                             <div className="w-[260px] sm:w-[320px] md:w-[400px] bg-white rounded-lg shadow-lg overflow-hidden p-3 transition-all duration-300 ">
                                 <LazyLoadImage
                                     alt={slide.title}
-                                    src={slide.imageUrl}
+                                    src={optimizedImage}
                                     placeholderSrc={placeholderSrc}
                                     effect="blur"
                                     className="w-full aspect-[4/3] object-cover rounded-md"
