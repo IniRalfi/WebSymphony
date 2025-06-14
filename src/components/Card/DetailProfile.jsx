@@ -35,7 +35,7 @@ const DetailProfile = ({ mahasiswa, onClose }) => {
             <Swiper
               modules={[Pagination, Autoplay]}
               slidesPerView={1}
-              autoplay={{ delay: 2000, disableOnInteraction: false }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop
               className="profile-swiper w-full h-full rounded-lg"
             >
@@ -46,7 +46,7 @@ const DetailProfile = ({ mahasiswa, onClose }) => {
                 );
                 const optimalSrc = src.replace(
                   '/upload/',
-                  '/upload/w_600,q_auto,f_auto/'
+                  '/upload/w_800,q_auto,f_auto/'
                 );
                 return (
                   <SwiperSlide key={i}>
