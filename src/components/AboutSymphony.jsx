@@ -16,21 +16,13 @@ const momenSlides = [
     { title: 'Hand Sign - Depan', name: '', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263525/HandSignFront_wa6m3z.png' },
     { title: 'Hand Sign - Belakang', name: '', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263526/HandSignBack_n0a7ny.png' },
     { title: 'Tempat Favorit', name: 'Lab Sisfo', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263524/LabSisfo_wkz1hg.jpg' },
-    { title: 'Logo Angkatan', name: 'Symphony', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263524/Symphony_s1ucn9.png' },
-    { title: 'Hand Sign - Depan', name: '', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263525/HandSignFront_wa6m3z.png' },
-    { title: 'Hand Sign - Belakang', name: '', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263526/HandSignBack_n0a7ny.png' },
-    { title: 'Tempat Favorit', name: 'Lab Sisfo', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749263524/LabSisfo_wkz1hg.jpg' },
 ];
 
 const pengurusSlides = [
     { title: 'Ketua angkatan', name: 'Rito Ramadhan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749272154/nrito_no_background_rwlhwt.png' },
     { title: 'Bendahara 1', name: 'Nabila Nur Anisa', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271552/billa_yhegei.jpg' },
     { title: 'Bendahara 2', name: 'Virsya Meidina Andriadie', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271478/virsya_x9jry6.png' },
-    { title: 'Sekretaris', name: 'Jesika Tan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271629/Picsart_25-06-06_12-11-03-554_wjpore.png' },
-    { title: 'Ketua angkatan', name: 'Rito Ramadhan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749272154/nrito_no_background_rwlhwt.png' },
-    { title: 'Bendahara 1', name: 'Nabila Nur Anisa', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271552/billa_yhegei.jpg' },
-    { title: 'Bendahara 2', name: 'Virsya Meidina Andriadie', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271478/virsya_x9jry6.png' },
-    { title: 'Sekretaris', name: 'Jesika Tan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271629/Picsart_25-06-06_12-11-03-554_wjpore.png' },
+    { title: 'Sekretaris', name: 'Jesika Tan', imageUrl: 'https://res.cloudinary.com/iniralfi/image/upload/v1749271629/Picsart_25-06-06_12-11-03-554_wjpore.png' }
 ];
 
 const GallerySlider = ({ title, slides }) => {
@@ -54,6 +46,7 @@ const GallerySlider = ({ title, slides }) => {
                 pagination={{ clickable: true }}
                 className='mySwiper py-10 px-0'
                 spaceBetween={20}
+                loopFillGroupWithBlank={true}
             >
                 {slides.map((slide, idx) => {
                     const placeholderSrc = slide.imageUrl.replace('/upload/', '/upload/q_auto:low,w_40/');
