@@ -19,9 +19,9 @@ const Footer = () => {
                     <img src={logoSymphony} alt="Logo Symphony" className="max-w-[80px]" />
                 </div>
                 <div className="flex-1 basis-[250px] text-center text-sm">
-                    <p className="my-1">Jl. Prof. Dr. Hadari Nawawi, Gdg. FMIPA Baru</p>
-                    <p className="my-1">Telepon : (0561) 577963</p>
-                    <p className="my-1">Email : sisfo@untan.ac.id</p>
+                    <p className="my-1">© 2025 Sistem Informasi Angkatan 2024</p>
+                    <p className="my-1">Universitas Tanjungpura</p>
+                    <p className="my-1 italic">smart system, strong synergy</p>
                 </div>
                 <div className="flex-1 basis-[250px] flex justify-center md:justify-end">
                     <img src={logoHmsiUntan} alt="Logo HMSI Untan" className="max-w-[100px]" />

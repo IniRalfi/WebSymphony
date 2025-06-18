@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
@@ -30,19 +30,11 @@ const GallerySlider = ({ title, slides }) => {
         <div className="w-full mb-12  bg-white rounded-lg shadow-xl p-4">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-800">{title}</h2>
             <Swiper
-                modules={[EffectCoverflow, Pagination, Autoplay]}
-                // effect={'coverflow'}
+                modules={[Pagination, Autoplay]}
                 loop={true}
                 grabCursor={true}
                 centeredSlides={true}
                 slidesPerView={'auto'}
-                // coverflowEffect={{
-                //     rotate: 0,
-                //     stretch: -50,
-                //     depth: 100,
-                //     modifier: 2,
-                //     slideShadows: true,
-                // }}
                 pagination={{ clickable: true }}
                 className='mySwiper py-10 px-0'
                 spaceBetween={20}
