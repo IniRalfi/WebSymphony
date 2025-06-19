@@ -20,7 +20,7 @@ const ProfileCard = ({ nama, nim, foto, onClick }) => {
           alt={nama}
           placeholderSrc={placeholderSrc}
           effect="blur"
-          className="w-full h-full object-cover object-center transition-transform duration-300 ease-in-out group-hover:scale-110"
+          className="w-full h-full object-cover object-center transition-transform ease-in-out group-hover:scale-105 duration-500 will-change-transform"
           onError={handleImageError}
         />
       </div>
