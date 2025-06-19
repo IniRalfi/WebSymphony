@@ -19,7 +19,7 @@ const Home = () => {
   }, [location.state]);
   return (
     <div>
-      <title>Symphony 2024 - Sistem Informasi Untan</title>
+      <title>Symphony24 - Website Mahasiswa Sisfo angkatan 2024</title>
       <meta name="description" content="Selamat datang di website resmi angkatan Symphony 2024, Sistem Informasi, FMIPA, Universitas Tanjungpura. Kenali kami lebih dekat!" />
       <section id='circle'>
         <CircleGalley />
