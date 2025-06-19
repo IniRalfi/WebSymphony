@@ -19,6 +19,8 @@ const Home = () => {
   }, [location.state]);
   return (
     <div>
+      <title>Symphony 2024 - Sistem Informasi Untan</title>
+      <meta name="description" content="Selamat datang di website resmi angkatan Symphony 2024, Sistem Informasi, FMIPA, Universitas Tanjungpura. Kenali kami lebih dekat!" />
       <section id='circle'>
         <CircleGalley />
       </section>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://symphony24.vercel.app/sitemap.xml
