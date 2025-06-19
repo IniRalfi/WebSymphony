@@ -3,11 +3,11 @@
         "id": 1,
         "title": "Matrikulasi",
         "photos": [
-            "https://res.cloudinary.com/iniralfi/image/upload/v1747560462/foto_bersama_symphony_zkuyls.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1747560458/IMG-20240816-WA0073_mfmkdp.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1747560456/IMG-20240816-WA0081_mqkotx.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1747560455/IMG-20240816-WA0015_rbvxdq.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1747560456/IMG-20240816-WA0081_mqkotx.jpg"
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328286/foto_bersama_symphony_zkuyls_phxtyk.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328276/IMG-20240816-WA0073_mfmkdp_wncsvu.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328271/IMG-20240816-WA0081_mqkotx_tdwrw7.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328266/IMG-20240816-WA0015_rbvxdq_pu80wj.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328286/foto_bersama_symphony_zkuyls_phxtyk.jpg"
         ],
         "date": "2024-08-15"
     },
@@ -16,29 +16,28 @@
         "id": 2,
         "title": "Bakti Sosial",
         "photos": [
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749273316/DSC09922_jsnzzg.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749273307/DSC09884_rdwmlz.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749273309/IMG_3136_ybkboi.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749273313/DSC09684_cqdvvn.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749273317/IMG_3363_osseiv.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749273323/DSC09693_qrripm.jpg"
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328285/DSC09922_jsnzzg_nb1ycq.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328282/DSC09684_cqdvvn_zbumiw.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328281/DSC09693_qrripm_mxgoxk.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328252/IMG_3363_osseiv_rzf05r.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328248/IMG_3397_mo3vh3_o8gwln.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328242/IMG_3136_ybkboi_zb8psy.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328242/DSC09884_rdwmlz_pertwv.jpg"
         ],
         "date": "2025-03-15"
     },
-
     {
         "id": 3,
         "title": "Malam Keakraban",
         "photos": [
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749274122/DSC00059_qxmjcv.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749274125/DSC00137_p5oogb.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749274122/DSC00091_ufmlxr.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749274118/DSC00133_q3mnvy.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749274118/DSC00135_sqnxhl.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749274116/DSC00132_mak9js.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749274114/DSC00127_ll926x.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749274110/DSC00168_dzubkh.jpg",
-            "https://res.cloudinary.com/iniralfi/image/upload/v1749274111/DSC00250_t8p7dj.jpg"
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328268/DSC00250_t8p7dj_rnzg07.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328283/DSC00137_p5oogb_kiqnnp.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328268/DSC00133_q3mnvy_zbdkgd.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328258/DSC00132_mak9js_kfxtdu.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328264/DSC00135_sqnxhl_iirrgu.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328257/DSC00059_qxmjcv_nj8zqv.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328254/DSC00127_ll926x_ut46h2.jpg",
+            "https://res.cloudinary.com/symphony24/image/upload/v1750328268/DSC00133_q3mnvy_zbdkgd.jpg"
         ],
         "date": "2025-03-15"
     }

@@ -82,7 +82,7 @@ const DetailProfile = ({ mahasiswa, onClose }) => {
                 className="flex justify-center justify-items-stretch hover:opacity-80"
               >
                 <img
-                  src="https://res.cloudinary.com/iniralfi/image/upload/v1747568076/instagram_tn03rt.png"
+                  src="https://res.cloudinary.com/symphony24/image/upload/v1750327218/instagram_tn03rt_p4gsvx.png"
                   alt="Instagram"
                   className="w-6 h-6"
                 />
