@@ -1,15 +1,10 @@
 "use client"
 
 import React, { useEffect, useRef } from "react"
-import dynamic from "next/dynamic"
 import Image from "next/image"
 
 import { ABOUT_SLIDER } from "@/constants/aboutSlider"
 import { AnimationPlaybackControlsWithThen, useAnimate } from "motion/react"
-
-const SplashCursor = dynamic(() => import("../ui/SplashCursor"), {
-  ssr: false,
-})
 
 export const AboutSection = () => {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -43,9 +38,6 @@ export const AboutSection = () => {
       <div ref={scope} className="inline-flex">
         <Images controlRef={controlRef} />
         <Images controlRef={controlRef} />
-      </div>
-      <div className="absolute top-0 left-0 -z-10">
-        <SplashCursor />
       </div>
     </section>
   )
