@@ -3,7 +3,7 @@ import { HeroSection } from "@/components/layouts/HeroSection"
 
 export default function Home() {
   return (
-    <main className="space-y-20">
+    <main>
       <HeroSection />
       <AboutSection />
     </main>
