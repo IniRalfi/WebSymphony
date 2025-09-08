@@ -21,8 +21,6 @@ export const HeroSection = () => {
       />
       <div className="absolute top-1/2 flex h-auto w-full -translate-y-1/2 lg:top-0 lg:left-0 lg:translate-y-0">
         <svg
-          id="Layer_2"
-          data-name="Layer 2"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 281.16 111.43"
           className="fill-primary flex-grow"

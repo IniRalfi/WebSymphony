@@ -32,7 +32,6 @@ export const AboutSection = () => {
           Vibe
         </h2>
       </div>
-      <div className="bg-primary h-screen"></div>
     </section>
   )
 }
