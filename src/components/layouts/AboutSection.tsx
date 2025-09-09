@@ -5,9 +5,7 @@ export const AboutSection = () => {
     <section className="mt-20">
       <div className="text-primary container mb-28 grid grid-cols-12">
         <div className="col-span-12 grid h-fit grid-cols-2 items-end lg:col-span-7">
-          <h1 className="font-serif text-6xl md:text-7xl lg:text-6xl">
-            Symphony
-          </h1>
+          <h1 className="font-serif text-6xl md:text-7xl">Symphony</h1>
           <p className="hidden text-sm md:block">
             What is
             <br />
