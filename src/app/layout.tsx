@@ -3,6 +3,7 @@ import localFont from "next/font/local"
 
 import "./globals.css"
 
+import { StickyFooter } from "@/components/fragments/StickyFooter"
 import { SmoothScroll } from "@/components/ui/SmoothScroll"
 
 const neueMontreal = localFont({
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <SmoothScroll />
         {children}
+        <StickyFooter />
       </body>
     </html>
   )

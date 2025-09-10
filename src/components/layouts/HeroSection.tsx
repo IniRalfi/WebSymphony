@@ -1,8 +1,8 @@
 "use client"
 
 import React from "react"
-import Link from "next/link"
 
+import { MenuNav } from "../ui/MenuNav"
 // import FlickeringGrid from "../fragments/FlickeringGrid"
 import TrailingImage from "./TrailingImage"
 
@@ -19,11 +19,11 @@ export const HeroSection = () => {
           "/gallery/image5.jpg",
         ]}
       />
-      <div className="absolute top-1/2 flex h-auto w-full -translate-y-1/2 lg:top-0 lg:left-0 lg:translate-y-0">
+      <div className="absolute top-1/2 h-auto w-full -translate-y-1/2 lg:top-0 lg:left-0 lg:translate-y-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 281.16 111.43"
-          className="fill-primary flex-grow"
+          className="fill-primary"
         >
           <g>
             <g>
@@ -52,20 +52,5 @@ export const HeroSection = () => {
         </div>
       </div>
     </section>
-  )
-}
-
-const MenuNav = ({
-  href,
-  children,
-}: {
-  href: string
-  children: React.ReactNode
-}) => {
-  return (
-    <Link href={href} key={href} className="group flex flex-col gap-y-0.5">
-      <p>{children}</p>
-      <span className="bg-primary h-px w-0 transition-all duration-300 group-hover:w-full"></span>
-    </Link>
   )
 }
