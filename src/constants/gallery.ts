@@ -140,3 +140,7 @@ export const GALLERY = [
     src: "/gallery/image28.jpg",
   },
 ]
+
+export const GALLERY_IN_HOMEPAGE = GALLERY.slice(0, 15)
+
+export type GalleryType = typeof GALLERY
