@@ -26,8 +26,8 @@ export const AboutSection = () => {
         </div>
       </div>
       <div className="flex justify-center overflow-hidden">
-        <h2 className="text-primary -mb-12 -ml-20 rotate-2 font-serif text-[20rem] leading-[0.8] italic select-none md:-mb-20 md:-ml-36 md:text-[32rem] lg:-ml-[16rem] lg:text-[76rem]">
-          Vibe
+        <h2 className="text-primary -mb-12 -ml-20 rotate-[5deg] font-serif text-[18rem] leading-[0.8] italic select-none md:-mb-20 md:-ml-24 md:text-[32rem] lg:-ml-[16rem] lg:text-[60rem]">
+          2024
         </h2>
       </div>
     </section>

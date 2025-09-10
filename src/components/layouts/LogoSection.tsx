@@ -2,7 +2,7 @@ import React from "react"
 
 export const LogoSection = () => {
   return (
-    <section className="bg-primary py-44">
+    <section className="bg-primary py-24 md:py-32 lg:py-44">
       <div className="container text-white">
         <div className="mb-16 grid grid-cols-1 gap-y-10 md:mb-28 md:grid-cols-2">
           <div className="col-span-1">

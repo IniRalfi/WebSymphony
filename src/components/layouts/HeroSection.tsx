@@ -2,6 +2,8 @@
 
 import React from "react"
 
+import { GALLERY_IN_HOMEPAGE } from "@/constants/gallery"
+
 import { MenuNav } from "../ui/MenuNav"
 // import FlickeringGrid from "../fragments/FlickeringGrid"
 import TrailingImage from "./TrailingImage"
@@ -11,13 +13,7 @@ export const HeroSection = () => {
     <section className="relative h-svh overflow-hidden">
       <TrailingImage
         className="relative z-10 size-full"
-        images={[
-          "/gallery/image1.jpg",
-          "/gallery/image2.jpg",
-          "/gallery/image3.jpg",
-          "/gallery/image4.jpg",
-          "/gallery/image5.jpg",
-        ]}
+        images={GALLERY_IN_HOMEPAGE.map((item) => item.src)}
       />
       <div className="absolute top-1/2 h-auto w-full -translate-y-1/2 lg:top-0 lg:left-0 lg:translate-y-0">
         <svg
