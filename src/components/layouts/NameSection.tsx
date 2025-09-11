@@ -1,15 +1,56 @@
-import React from "react"
+"use client"
+
+import React, { useRef } from "react"
+
+import { motion, useInView } from "motion/react"
 
 export const NameSection = () => {
+  const texts =
+    'Symphony yang memiliki arti "Sistem Informasi Pengembang Optimasi dan Inovasi." Kata ini dipilih untuk melambangkan harmoni dan kolaborasi di antara mahasiswa yang berperan sebagai pengembang.'.split(
+      " "
+    )
+  const textContainerRef = useRef<HTMLHeadingElement>(null)
+  const isInView = useInView(textContainerRef, { amount: 0.5, once: true })
   return (
     <section className="container py-20 lg:py-32">
-      <h2 className="text-primary mb-10 text-3xl leading-tight font-semibold md:text-4xl lg:text-5xl">
-        <span className="pl-20">Symphony</span> yang memiliki arti{" "}
+      <h2
+        ref={textContainerRef}
+        className="text-primary mb-10 text-3xl leading-tight font-semibold md:text-4xl lg:text-5xl"
+      >
+        {texts.map((text, index) => (
+          <span key={index} className="overflow-text">
+            <motion.span
+              key={index}
+              initial={{ y: "100%" }}
+              animate={{ y: isInView ? "0%" : "100%" }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.02,
+                type: "easeInOut",
+              }}
+              className="inline-block"
+            >
+              {index == 0 ? (
+                <span className="pl-20">{text}</span>
+              ) : (
+                <>
+                  {index > 3 && index < 10 ? (
+                    <span className="font-serif italic">{text}</span>
+                  ) : (
+                    text
+                  )}
+                </>
+              )}
+            </motion.span>{" "}
+          </span>
+        ))}
+
+        {/* <span className="pl-20">Symphony</span> yang memiliki arti{" "}
         <span className="font-serif">
           &quot;Sistem Informasi Pengembang Optimasi dan Inovasi,&quot;
         </span>{" "}
         Kata ini dipilih untuk melambangkan harmoni dan kolaborasi di antara
-        mahasiswa yang berperan sebagai pengembang.
+        mahasiswa yang berperan sebagai pengembang. */}
       </h2>
       <div className="flex justify-center">
         <svg

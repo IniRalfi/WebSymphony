@@ -13,7 +13,6 @@ type Props = {
 
 export const CardGallery = ({ gallery }: Props) => {
   const [isHovered, setIsHovered] = useState(false)
-  const href = `/galeri/${gallery.id}`
 
   // Split text into individual characters for stagger animation
   const titleChars = gallery.title.split("")
@@ -32,7 +31,7 @@ export const CardGallery = ({ gallery }: Props) => {
   }
 
   return (
-    <Link href={href}>
+    <Link href={`/galeri/${gallery.id}`}>
       <motion.div
         className="h-fit"
         onMouseEnter={() => setIsHovered(true)}

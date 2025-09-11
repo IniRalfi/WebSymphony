@@ -16,7 +16,7 @@ export const JargonSection = () => {
             alt="Symphony (galengkap sii)"
             width={600}
             height={600}
-            className="h-auto w-full object-cover"
+            className="h-auto w-full object-cover transition-all duration-300 hover:rounded-4xl"
           />
         </div>
         <div className="col-span-3 lg:col-span-1">
