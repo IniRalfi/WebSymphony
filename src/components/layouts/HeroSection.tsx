@@ -5,8 +5,6 @@ import React from "react"
 import { GALLERY_IN_HOMEPAGE } from "@/constants/gallery"
 import { motion } from "motion/react"
 
-import { MenuNav } from "../ui/MenuNav"
-// import FlickeringGrid from "../fragments/FlickeringGrid"
 import TrailingImage from "./TrailingImage"
 
 export const HeroSection = () => {
@@ -16,7 +14,7 @@ export const HeroSection = () => {
         className="relative z-10 size-full"
         images={GALLERY_IN_HOMEPAGE.map((item) => item.src)}
       />
-      <div className="absolute top-1/2 h-auto w-full -translate-y-1/2 lg:top-0 lg:left-0 lg:translate-y-0">
+      <div className="absolute top-1/2 left-0 mt-10 h-auto w-full -translate-y-1/2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 281.16 150"
@@ -75,50 +73,6 @@ export const HeroSection = () => {
             </g>
           </g>
         </svg>
-      </div>
-      <div className="absolute bottom-0 left-0 z-20 w-full">
-        <div className="text-primary container grid h-svh grid-cols-2 py-60 md:py-40 lg:h-auto lg:py-10">
-          <div className="col-span-2 flex justify-between lg:col-span-1 lg:justify-start lg:gap-[55%]">
-            <div className="overflow-clip">
-              <motion.div
-                initial={{ y: "100%" }}
-                animate={{ y: "0%" }}
-                transition={{ duration: 1, type: "spring", delay: 0.7 }}
-              >
-                <MenuNav href="/">Beranda</MenuNav>
-              </motion.div>
-            </div>
-            <div className="overflow-clip">
-              <motion.div
-                initial={{ y: "100%" }}
-                animate={{ y: "0%" }}
-                transition={{ duration: 1, type: "spring", delay: 0.8 }}
-              >
-                <MenuNav href="/mahasiswa">Mahasiswa</MenuNav>
-              </motion.div>
-            </div>
-          </div>
-          <div className="col-span-2 flex items-end justify-between lg:col-span-1 lg:justify-end lg:gap-[55%]">
-            <div className="overflow-clip">
-              <motion.div
-                initial={{ y: "100%" }}
-                animate={{ y: "0%" }}
-                transition={{ duration: 1, type: "spring", delay: 0.9 }}
-              >
-                <MenuNav href="/galeri">Galeri</MenuNav>
-              </motion.div>
-            </div>
-            <div className="overflow-clip">
-              <motion.div
-                initial={{ y: "100%" }}
-                animate={{ y: "0%" }}
-                transition={{ duration: 1, type: "spring", delay: 1 }}
-              >
-                <MenuNav href="/lagu-lagu">Lagu-lagu</MenuNav>
-              </motion.div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

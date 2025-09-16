@@ -3,6 +3,7 @@ import localFont from "next/font/local"
 
 import "./globals.css"
 
+import { SideNav } from "@/components/fragments/SideNav"
 import { StickyFooter } from "@/components/fragments/StickyFooter"
 import { SmoothScroll } from "@/components/ui/SmoothScroll"
 
@@ -29,10 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${neueMontreal.variable} ${perfectlyNineties.variable} font-sans`}
+        className={`${neueMontreal.variable} ${perfectlyNineties.variable} relative font-sans`}
       >
         <SmoothScroll />
         {children}
+        <SideNav />
         <StickyFooter />
       </body>
     </html>
