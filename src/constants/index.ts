@@ -12,7 +12,7 @@ export const NAV = [
     href: "/galeri",
   },
   {
-    name: "Lagu-lagu",
-    href: "/lagu-lagu",
+    name: "Lagu Angkatan",
+    href: "/lagu-angkatan",
   },
 ]

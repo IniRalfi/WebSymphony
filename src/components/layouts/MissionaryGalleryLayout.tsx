@@ -20,6 +20,9 @@ export const MissionaryGalleryLayout = ({ gallery }: Props) => {
     numberOfArrays = 4
   } else if (window.innerWidth >= 768) {
     // md
+    numberOfArrays = 3
+  } else if (window.innerWidth >= 425) {
+    // sm
     numberOfArrays = 2
   }
 
@@ -33,11 +36,11 @@ export const MissionaryGalleryLayout = ({ gallery }: Props) => {
   })
 
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+    <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-4">
       {MISSIONARY_DESIGN.map((design, i) => (
-        <div key={i} className="flex flex-col gap-y-4">
-          {design.map((item, i) => (
-            <div key={i} className="h-fit">
+        <div key={"section" + i} className="flex flex-col gap-y-4">
+          {design.map((item, j) => (
+            <div key={"item" + j} className="h-fit">
               <CardGallery gallery={item} />
             </div>
           ))}

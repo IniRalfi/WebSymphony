@@ -1,0 +1,741 @@
+export const MAHASISWA = [
+  {
+    nama: "Adhelia Issabel",
+    nim: "H1101241001",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/w_828,q_auto,f_auto/v1750320154/IMG_9490_bjmcny_rr5b3y.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/w_828,q_auto,f_auto/v1750320155/IMG_9491_yzrmcy_t7msvi.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/w_828,q_auto,f_auto/v1750320154/IMG_9492_mffvwf_eyjcqw.jpg",
+    ],
+    quotes: "Mimpiku terwujud, soalnya aku tidur terus",
+    instagram: "adheliaissabel",
+  },
+
+  {
+    nama: "Nayla Zakiyah Andani",
+    nim: "H1101241002",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320005/DSC09555_osjpbx_oe0bqm.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320018/DSC09557_abohtl_ewo8tf.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320018/DSC09556_cao5ld_cpl95h.jpg",
+    ],
+    quotes: "Be brave, take risks, the future is waiting",
+    instagram: "naylazndni",
+  },
+
+  {
+    nama: "Chalysta Setyani",
+    nim: "H1101241003",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320148/IMG_9487_gfdrzf_okgh3o.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320154/IMG_9489_enzvzz_q8sh4a.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320151/IMG_9488_zlmie8_m1wmzu.jpg",
+    ],
+    quotes: "Hiduplah sampai garis finish",
+    instagram: "chlystastyni",
+  },
+
+  {
+    nama: "Virsya Meidina Andriadie",
+    nim: "H1101241004",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750326955/IMG_2601_xhwt0q.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750326955/IMG_2601_xhwt0q.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750326955/IMG_2601_xhwt0q.jpg",
+    ],
+    quotes: "Semua setara di graha Symphonia",
+    instagram: "virsyandr",
+  },
+
+  {
+    nama: "Christian Haikhel Sengkey",
+    nim: "H1101241005",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320099/IMG_9449_hgggkc_dosxri.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320101/IMG_9450_l9dkch_xnlwmj.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320114/IMG_9458_y1kzja_exzkgc.jpg",
+    ],
+    quotes: "Syntax error : Sukses itu butuh tawa!",
+    instagram: "chriss_zq",
+  },
+
+  {
+    nama: "Febrianti Khumairoh",
+    nim: "H1101241006",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320038/DSC09573_vg3mdt_tpkpkm.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320035/DSC09574_tywaup_xhxzgj.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320042/DSC09575_cejzev_t0dsbf.jpg",
+    ],
+    quotes: "Start, try & pray",
+    instagram: "febriantikhr",
+  },
+
+  {
+    nama: "Iqlima Nur'ain",
+    nim: "H1101241007",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320144/IMG_9483_glwkwd_tgansh.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320147/IMG_9484_vqoaek_lcdpym.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320146/IMG_9485_cqtqfn_ucslfp.jpg",
+    ],
+    quotes: "Semua setara di graha Symphonia",
+    instagram: "ma.willctre",
+  },
+
+  {
+    nama: "Rafli Pratama",
+    nim: "H1101241008",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320027/DSC09547_rp06mx_cpael4.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320032/DSC09548_sdssnm_c2s8n4.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320011/DSC09549_tx9zqm_czcgdy.jpg",
+    ],
+    quotes:
+      "Cari uang yang banyak supaya bisa ketemu Nadin Amizah, JKT48, Niki wkwk",
+    instagram: "iniralfi",
+  },
+
+  {
+    nama: "Zulfikarnaen",
+    nim: "H1101241009",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320108/IMG_9451_q6qybm_no7qiw.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320106/IMG_9452_nsukdk_n4sivq.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320110/IMG_9455_af8adm_nolpdq.jpg",
+    ],
+    quotes:
+      "Kita boleh diremehkan sama orang lain, tapi kita tidak boleh naik dengan menjatuhkan orang lain",
+    instagram: "si_zul",
+  },
+
+  {
+    nama: "Mas Jihan Afra Auzia",
+    nim: "H1101241011",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320197/IMG_9526_vxg2ee_qubsr8.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320206/IMG_9530_pdkkj4_htqbkq.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320197/IMG_9529_ivwc38_xaskmd.jpg",
+    ],
+    quotes: "Life on dnd, only deal with who i want",
+    instagram: "jihanauziaa",
+  },
+
+  {
+    nama: "Muhammad Rafli Assidiq",
+    nim: "H1101241012",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750326953/IMG_2594_uhhkd8.jpg",
+    ],
+    quotes: "Hidup untuk ibadah",
+    instagram: "rfl_asdq",
+  },
+
+  {
+    nama: "Nabila Nur Anisa",
+    nim: "H1101241013",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320141/IMG_9475_u4rgnw_gtrjqm.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320137/IMG_9478_weoidh_r7g3zi.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320139/IMG_9477_pnjetk_gy7bp2.jpg",
+    ],
+    quotes: "Semua setara di graha Symphonia",
+    instagram: "nnabila36",
+  },
+
+  {
+    nama: "Kayla Naomi Nataya",
+    nim: "H1101241014",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320063/DSC09597_yardjv_n1cbiy.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320064/DSC09599_fx1tty_lar78f.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320070/DSC09598_xxghil_nlo5az.jpg",
+    ],
+    quotes: "After many storms, we will graduate together",
+    instagram: "  ",
+  },
+
+  {
+    nama: "Ghina Audhiya Khairunisa",
+    nim: "H1101241015",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320204/IMG_9532_bnfqmp_qpnp4l.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320330/IMG_9535_lcofz2_lv2sgk.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320203/IMG_9534_gnickf_fxoect.jpg",
+    ],
+    quotes:
+      "Kebersamaan bukan hanyalah tentang bekerja bersama, tetapi juga tentang tumbuh bersama, tertawa bersama, dan merayakan kesuksesan bersama",
+    instagram: "gi.naaa_",
+  },
+
+  {
+    nama: "Rola Dea Januarita",
+    nim: "H1101241016",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320013/DSC09543_fudica_hrqdpk.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320000/DSC09544_jmwmcs_ybj3ep.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319999/DSC09546_ptb8l1_ubtxao.jpg",
+    ],
+    quotes: "Jangan lupa ibadah",
+    instagram: "roladea_",
+  },
+
+  {
+    nama: "Gyraldine Agustiwi",
+    nim: "H1101241017",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320161/IMG_9496_ohzdxr_sqvvbr.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320166/IMG_9495_rmm5ox_avlcrv.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320156/IMG_9494_aldoh8_boxkyv.jpg",
+    ],
+    quotes: "Jangan menyerah apapun yang terjadi",
+    instagram: "geealdi",
+  },
+
+  {
+    nama: "Olivia Naura Fakhradika",
+    nim: "H1101241019",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750335412/WhatsApp_Image_2025-06-19_at_19.03.56_34f2d929_a0zqvj.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750335411/WhatsApp_Image_2025-06-19_at_19.03.56_7bb42b5b_xq3mrh.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750335412/WhatsApp_Image_2025-06-19_at_19.03.56_34f2d929_a0zqvj.jpg",
+    ],
+    quotes: "They said to be cool but, I’m already the coolest ^____^ ",
+    instagram: "olievieyya",
+  },
+
+  {
+    nama: "Audy Mastel",
+    nim: "H1101241020",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319977/DSC09526_sdgqci_ybel7a.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319970/DSC09527_dcst7u_e7jdb3.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319987/DSC09528_wasguz_iycfa2.jpg",
+    ],
+    quotes: "Hidup Mengikuti Arus",
+    instagram: "dedem_audy",
+  },
+
+  {
+    nama: "Lucky Septhiano",
+    nim: "H1101241021",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320127/IMG_9462_fjjcgc_bm1jtb.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320119/IMG_9463_o3fym2_nhokcv.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320120/IMG_9464_icrz1s_bp5lqh.jpg",
+    ],
+    quotes: "Jalan terus, sampai tipes",
+    instagram: "thiaaaaans",
+  },
+
+  {
+    nama: "Cynthia Fransisca",
+    nim: "H1101241022",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320365/DSC09591_szkqiq_syhvhl.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320373/DSC09592_ha8phi_a75g01.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320368/DSC09593_efphnl_ujxowz.jpg",
+    ],
+    quotes: "Just Keep Swimming",
+    instagram: "cytha_frnsca",
+  },
+
+  {
+    nama: "Rifa Dwinanda Bagaskara",
+    nim: "H1101241023",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320091/IMG_2556_rjai0k_alwqpe.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320091/IMG_2556_rjai0k_alwqpe.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320091/IMG_2556_rjai0k_alwqpe.jpg",
+    ],
+    quotes:
+      "Keep ur spirit, mentality, and health good for chasing great future",
+    instagram: "rfadwnnda",
+  },
+
+  {
+    nama: "Radika Trieza Aritonang",
+    nim: "H1101241024",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319975/DSC09516_gmk5dh_jut77t.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319968/DSC09519_umiptr_astc5t.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319976/DSC09517_r1zags_spj4fo.jpg",
+    ],
+    quotes: "wop",
+    instagram: "radikatrz_",
+  },
+
+  {
+    nama: "Syafira Aulianisa",
+    nim: "H1101241025",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320336/IMG_9593_sfvf4t_kvg4qh.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320343/IMG_9596_kptqaq_cqa8e1.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320336/IMG_9595_tgf2qh_nfjdfd.jpg",
+    ],
+    quotes: "Semua setara di graha Symphonia",
+    instagram: "aulns4",
+  },
+
+  {
+    nama: "Salsabila Nur Haniyah",
+    nim: "H1101241026",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320057/DSC09583_fmx7jt_qt9hbo.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320053/DSC09579_v7wbn2_pgb93z.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320053/DSC09581_bblpmd_zydwra.jpg",
+    ],
+    quotes: "Work hard, pray hard, istira hard",
+    instagram: "asabyll",
+  },
+
+  {
+    nama: "Syarifah Munibah Arifah Raziah",
+    nim: "H1101241027",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320328/IMG_9539_aid6rm_tspxsg.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320328/IMG_9542_igy1fv_tvus0m.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320330/IMG_9541_jfulqi_xchyel.jpg",
+    ],
+    quotes: "Semua setara di graha Symphonia",
+    instagram: "mooneyvach",
+  },
+
+  {
+    nama: "Prilia Melani Puspita",
+    nim: "H1101241028",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319994/DSC09532_dn8o03_wnicve.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319986/DSC09534_ccrrxd_vw6pqq.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320002/DSC09533_tvxvzl_lqxu0w.jpg",
+    ],
+    quotes: "Hidup aja dulu",
+    instagram: "shemellifluous",
+  },
+
+  {
+    nama: "Arjun Maheswara Paundra",
+    nim: "H1101241029",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320098/IMG_9441_lgxrrf_a6nl81.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320102/IMG_9442_oj3nsn_soqcyl.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320109/IMG_9456_gujfve_r0hdxw.jpg",
+    ],
+    quotes: "Hidup",
+    instagram: "poonndraa",
+  },
+
+  {
+    nama: "Nadya Aulia Tiarani",
+    nim: "H1101241030",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319994/DSC09552_vstqwh_ulnqem.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320005/DSC09553_epgxta_tamyka.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320012/DSC09554_rhss4v_qnea3b.jpg",
+    ],
+    quotes: "Talk less, try the best",
+    instagram: "ndy_aalyra",
+  },
+
+  {
+    nama: "Irene Nasya Azalia",
+    nim: "H1101241031",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320164/IMG_9497_svjev8_mnerql.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320159/IMG_9499_cu89gk_oqaukr.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320162/IMG_9498_wrgmeq_jhsqth.jpg",
+    ],
+    quotes: "Semua setara di graha Symphonia",
+    instagram: "irenenasyaazalia",
+  },
+
+  {
+    nama: "Tan Atira Yasmin",
+    nim: "H1101241032",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320350/DSC09584_obymxy_jtgwjq.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320370/DSC09586_acdnxf_g41sat.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320360/DSC09585_uzf5cx_lr3vul.jpg",
+    ],
+    quotes: "Terlambat bukanlah hal yang tabu",
+    instagram: "rraayysmn",
+  },
+
+  {
+    nama: "Jesika Tan",
+    nim: "H1101241033",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320185/IMG_9512_z0qztr_gms0ql.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320183/IMG_9515_rvbxsv_t9sx3a.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320180/IMG_9513_fj16eb_gm6czm.jpg",
+    ],
+    quotes: "Semua setara di graha Symphonia",
+    instagram: "ireneakisej",
+  },
+
+  {
+    nama: "Adella Rheina Sweeta",
+    nim: "H1101241034",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320378/DSC09587_csnkue_aeifed.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320355/DSC09590_pmolvd_ke00m2.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320357/DSC09589_rl2esy_elzjk1.jpg",
+    ],
+    quotes: "yang penting yakin, kalau salah belakangan",
+    instagram: "ad.rheina",
+  },
+
+  {
+    nama: "Fahdil Raihandi",
+    nim: "H1101241035",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320119/IMG_9459_rzk6y2_qpc7iw.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320119/IMG_9460_dvfhim_d71l2q.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320123/IMG_9461_ha4xlb_fqvjbq.jpg",
+    ],
+    quotes: "Sembunyikan proses tunjukkan hasil 😹",
+    instagram: "fahdr__",
+  },
+
+  {
+    nama: "Regisha Sheren",
+    nim: "H1101241036",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320076/DSC09606_zsbcsv_zlpfcd.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320085/DSC09608_sbdbhu_yzybx4.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320077/DSC09607_audljx_bfnzc8.jpg",
+    ],
+    quotes: "Setiap kejadian pasti ada hikmahnya",
+    instagram: "erse.en",
+  },
+
+  {
+    nama: "Rito Ramadhan",
+    nim: "H1101241037",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320132/IMG_9471_nq8wbs_cfikcu.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320135/IMG_9473_fda8qo_rp1zai.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320133/IMG_9472_o9lxz0_wfqyys.jpg",
+    ],
+    quotes: "Jalanin aja dulu",
+    instagram: "ritoramadhann",
+  },
+
+  {
+    nama: "Saskia Mecca Widyarni ",
+    nim: "H1101241038",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320008/DSC09540_gw1wqw_rjzvdr.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319982/DSC09541_xxexa9_n6wymn.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319984/DSC09542_buxlmt_jhmdbl.jpg",
+    ],
+    quotes: "Life is what happens to you while you're busy making other plans",
+    instagram: "meccawd",
+  },
+
+  {
+    nama: "Florecita Wenny",
+    nim: "H1101241039",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320163/IMG_9500_kpozri_xxnhe8.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320227/IMG_9502_tldblw_nw2cpd.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320166/IMG_9501_z8ai7b_zzrsxv.jpg",
+    ],
+    quotes: "Napas aja dulu",
+    instagram: "weirecoo",
+  },
+
+  {
+    nama: "Marcello Chrisdiantoro",
+    nim: "H1101241041",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750327076/IMG_2595_mfrpc3.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750327076/IMG_2595_mfrpc3.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750327076/IMG_2595_mfrpc3.jpg",
+    ],
+    quotes: "Jadi lebih baik dibanding diriku",
+    instagram: "marcello_chris_",
+  },
+
+  {
+    nama: "Athallah Rizky Erin Saputra ",
+    nim: "H1101241042",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320048/DSC09529_v0dkli_sb4cwj.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319999/DSC09530_gwkmex_ai3zjj.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319975/DSC09531_mkaf5x_o2i0sx.jpg",
+    ],
+    quotes: "Kindness is a choice, even when it's hardest.",
+    instagram: "thlahrizk",
+  },
+
+  {
+    nama: "Aurellya Yocelyn Prasista",
+    nim: "H1101241043",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320247/IMG_9506_ona4s4_h7na68.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320316/IMG_9508_qars96_fxotag.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320315/IMG_9507_jvgdge_dswzz3.jpg",
+    ],
+    quotes:
+      "Santai aja, guys ... even Google Maps aja kadang nyasar, apalagi hidup kita!",
+    instagram: "2701.daily",
+  },
+
+  {
+    nama: "Aisyah",
+    nim: "H1101241044",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320027/DSC09559_sjkff3_zittsk.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320027/DSC09560_u9o8jd_ydvody.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320033/DSC09561_lyuswm_mncjx7.jpg",
+    ],
+    quotes:
+      "Kebaikan kecil hari ini bisa membawa perubahan besar di masa depan.",
+    instagram: "tij_an27",
+  },
+
+  {
+    nama: "Andy Emerik",
+    nim: "H1101241045",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320115/IMG_9453_veq78p_ov2dkr.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320115/IMG_9453_veq78p_ov2dkr.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320113/IMG_9454_jj4y4r_mfejdv.jpg",
+    ],
+    quotes: "Tetap bersemangat",
+    instagram: "andyemerik23",
+  },
+
+  {
+    nama: "Nabil Nur Fauzan",
+    nim: "H1101241046",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319993/DSC09523_hstykw_wqtwrm.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319982/DSC09524_zgtxd8_vxquxw.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750319989/DSC09525_jlxov5_pttdpt.jpg",
+    ],
+    quotes: "Kamu adalah apa yang kamu pikirkan",
+    instagram: "nablfauzn_",
+  },
+
+  {
+    nama: "Khairunnisa",
+    nim: "H1101241047",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320141/IMG_9480_or2c1w_olz2kj.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320151/IMG_9481_g53xmd_mytm0x.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320146/IMG_9482_jqdsn3_pdc8vl.jpg",
+    ],
+    quotes: "Pantang menyerah sebelum ketemu TXT",
+    instagram: "isanctuarry",
+  },
+
+  {
+    nama: "Timothy Walukow",
+    nim: "H1101241048",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320086/DSC09612_vmfugi_bm47ds.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320094/DSC09613_tzbckw_rhoe92.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320095/DSC09614_j68fdf_iallpw.jpg",
+    ],
+    quotes: "Semua setara di graha Symphonia",
+    instagram: "thimawtee",
+  },
+
+  {
+    nama: "Muhammad Rasyid",
+    nim: "H1101241049",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320128/IMG_9468_j2jket_xalrpx.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320128/IMG_9469_d8rzlc_nlcz7z.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320132/IMG_9470_hxeskn_bkumyi.jpg",
+    ],
+    quotes: "Dunia sementara",
+    instagram: "himtheii",
+  },
+
+  {
+    nama: "Kharizma Rizkiah",
+    nim: "H1101241050",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320032/DSC09562_tyfmgz_bsrs0x.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320047/DSC09563_db9jmp_mcodud.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320050/DSC09564_dcvalz_wkvo3e.jpg",
+    ],
+    quotes: "Dibalik setiap kesulitan, ada kemudahan yang menanti",
+    instagram: "kharizma_rzkh",
+  },
+
+  {
+    nama: "Gabriela Evelyn Anzelbi",
+    nim: "H1101241052",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320034/DSC09570_girqz4_pih38w.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320045/DSC09572_hkhkai_emhqev.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320041/DSC09571_dhkko6_t8xt3p.jpg",
+    ],
+    quotes:
+      "Kesuksesan tidak datang dari apa yang dilakukan sesekali, tetapi dari apa yang dilakukan secara konsisten",
+    instagram: "gabrielaevelyn._",
+  },
+
+  {
+    nama: "Michael Prima Lee",
+    nim: "H1101241053",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320344/IMG_9546_ugtjvm_k1tggm.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320337/IMG_9551_xwh7me_i0bplw.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320337/IMG_9551_xwh7me_i0bplw.jpg",
+    ],
+    quotes: "Tetap hidup",
+    instagram: "michaelprima_lee",
+  },
+
+  {
+    nama: "Intan Vitriani ",
+    nim: "H1101241054",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320055/DSC09576_ad8i5n_idloyk.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320058/DSC09578_veghes_uderhu.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320048/DSC09577_dbfczi_zjzfda.jpg",
+    ],
+    quotes:
+      "Lakukan hal-hal positif yang kamu sukai, dan jalani aja apapun hasilnya yang penting sudah mencoba, karna hal itu tidak akan datang keduakalinya ",
+    instagram: "itv_63",
+  },
+
+  {
+    nama: "Kania Kirani",
+    nim: "H1101241055",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320185/IMG_9517_av3s5l_g9wkrf.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320189/IMG_9520_k6stua_dpbajy.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320194/IMG_9519_qf29ys_ciymul.jpg",
+    ],
+    quotes: "Semua setara di graha Symphonia",
+    instagram: "kaniaa.kr",
+  },
+
+  {
+    nama: "Atikoh",
+    nim: "H1101241056",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320072/DSC09603_csi9qa_idmmxy.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320073/DSC09604_mijvhy_vodxxs.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320083/DSC09605_muxuzx_oligxs.jpg",
+    ],
+    quotes: "Menjadikan ilmu yg lebih bermanfaat dalam membantu orang lain",
+    instagram: "aaiko_ny",
+  },
+
+  {
+    nama: "Tesa Firna Ananta",
+    nim: "H1101241057",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320191/IMG_9521_icaipy_bsd7s1.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320192/IMG_9524_gkmbqn_ngcfn8.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320194/IMG_9523_fnbcz4_rs8zhk.jpg",
+    ],
+    quotes: "Do the best!!, Insyaallah",
+    instagram: "tesafrnta",
+  },
+
+  {
+    nama: "M. Arifqu Wa Liin",
+    nim: "H1101241058",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320072/DSC09600_srukfl_tfuli6.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320070/DSC09602_qzqpga_zw6psn.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320073/DSC09601_yz5srh_raxyta.jpg",
+    ],
+    quotes: "Jangan banyak pikiran",
+    instagram: "arifquu",
+  },
+
+  {
+    nama: "Frans Maylandgo Saragih",
+    nim: "H1101241059",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320130/IMG_9465_v1mtpi_fqzoez.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320125/IMG_9466_cwlstf_oq8vwz.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320125/IMG_9467_j1wewt_xrayum.jpg",
+    ],
+    quotes: "Hidup adalah seni, nikmati saja",
+    instagram: "franzxml",
+  },
+
+  {
+    nama: "M. Fadjri Akbar",
+    nim: "H1101241060",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320061/DSC09594_jms8o9_dvydm8.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320062/DSC09596_sywagl_wmb2sd.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320062/DSC09595_sl0l5u_diczsn.jpg",
+    ],
+    quotes: "Menikahi memb JKT48 (Opsional)",
+    instagram: "zelaxcy",
+  },
+
+  {
+    nama: "Viona Daniella Bira",
+    nim: "H1101241061",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320178/IMG_9511_mdp7ah_hhgwws.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320318/IMG_9510_zeync2_won5vt.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320315/IMG_9509_eokdfi_cyycff.jpg",
+    ],
+    quotes: "Yang penting hidup",
+    instagram: "fcnwy",
+  },
+
+  {
+    nama: "Lubna Adibah",
+    nim: "H1101241062",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320086/DSC09609_kymib2_w4hwbz.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320088/DSC09611_vohckq_ao6omr.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320087/DSC09610_m1qbiz_dcbols.jpg",
+    ],
+    quotes: "Never settle",
+    instagram: "lubnaadb",
+  },
+
+  {
+    nama: "Raden Aliyah Panji Anom",
+    nim: "H1101241064",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320023/DSC09566_xgy0tb_xwnko4.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320019/DSC09568_ysfvpo_erfoft.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320016/DSC09569_ogkudp_yzn14f.jpg",
+    ],
+    quotes: "Don't just exist, live with purpose",
+    instagram: "radenaliyahh",
+  },
+
+  {
+    nama: "Shalwa Nafiisa Yusri",
+    nim: "H1101241065",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320325/IMG_9543_l8jtww_tkbbvw.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320330/IMG_9544_efvm2c_eqduhk.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320337/IMG_9545_sxii6g_iequzx.jpg",
+    ],
+    quotes: "Be fierce, be flawless, and never let anyone dull your sparkle",
+    instagram: "nafiisays",
+  },
+
+  {
+    nama: "Evan Mulya Oktarohmat",
+    nim: "H1101241066",
+    foto: [
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320101/DSC09615_jbhksl_k72lbx.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320094/DSC09616_odf8zu_lmfwr4.jpg",
+      "https://res.cloudinary.com/symphony24/image/upload/v1750320101/DSC09617_nigx3b_x77uxx.jpg",
+    ],
+    quotes: "Hidup semaksimal mungkin",
+    instagram: "evan.oktarohmat",
+  },
+]
+
+export type MahasiswaType = (typeof MAHASISWA)[number]

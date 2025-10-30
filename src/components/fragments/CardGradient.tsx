@@ -18,7 +18,7 @@ export const CardGradient = ({
 
   return (
     <div
-      className="group group relative transform-gpu overflow-hidden rounded-[20px] bg-white/10 p-1.5 transition-transform hover:scale-[1.01] active:scale-90 lg:p-2"
+      className="group group relative transform-gpu overflow-hidden rounded-[20px] bg-white/10 p-1 transition-transform hover:scale-[1.01] active:scale-90 lg:p-2"
       ref={parentRef}
     >
       <div
@@ -53,11 +53,11 @@ export const CardGradient = ({
           placeholder="blur"
           className="absolute inset-0 h-full w-full rounded-[15px] object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
         />
-        <div className="absolute bottom-4 left-4">
-          <p className="text-primary mt-2 text-xs md:text-sm">
+        <div className="absolute bottom-2.5 left-3 md:bottom-4 md:left-4">
+          <p className="text-primary mt-2 text-[0.6rem] md:text-sm">
             {coordinator.role}
           </p>
-          <h3 className="text-primary text-xl font-semibold md:text-2xl">
+          <h3 className="text-primary text-sm font-semibold md:text-2xl">
             {coordinator.name}
           </h3>
         </div>

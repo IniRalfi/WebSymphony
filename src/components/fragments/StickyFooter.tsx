@@ -64,7 +64,7 @@ export function StickyFooter() {
               </ul>
             </div>
             <div className="col-span-1 lg:col-span-2">
-              <p className="lg:text-normal text-end text-xs tracking-wider md:text-sm">
+              <p className="lg:text-normal text-end text-[0.4rem] tracking-wider md:text-xs">
                 Create with love by <br />
                 <strong>Rito Ramadhan.</strong>
               </p>

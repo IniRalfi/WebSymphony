@@ -17,7 +17,7 @@ export const StructureSection = () => {
               </h1>
             </div>
           </div>
-          <div className="col-span-5 grid gap-2 md:grid-cols-2 md:gap-4 lg:col-span-3">
+          <div className="col-span-5 grid grid-cols-2 gap-1 md:gap-4 lg:col-span-3">
             {CLASS_COORDINATORS.map((item, index) => (
               <CardGradient key={index} coordinator={item} />
             ))}

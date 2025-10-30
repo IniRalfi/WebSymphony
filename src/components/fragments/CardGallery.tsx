@@ -9,9 +9,10 @@ import { motion } from "framer-motion"
 
 type Props = {
   gallery: GalleryType[number]
+  priority?: boolean
 }
 
-export const CardGallery = ({ gallery }: Props) => {
+export const CardGallery = ({ gallery, priority = false }: Props) => {
   const [isHovered, setIsHovered] = useState(false)
 
   // Split text into individual characters for stagger animation
@@ -43,10 +44,12 @@ export const CardGallery = ({ gallery }: Props) => {
           height={800}
           src={gallery.src}
           alt={gallery.title}
+          priority={priority}
+          loading={priority ? undefined : "lazy"}
           draggable={false}
         />
         <div className="mt-1.5 space-y-0.5">
-          <div className="text-primary relative overflow-hidden text-sm [word-spacing:0.2em]">
+          <div className="text-primary relative overflow-hidden px-1 text-xs md:text-sm md:[word-spacing:0.2em]">
             <div className="flex">
               {titleChars.map((char, index) => (
                 <motion.span
