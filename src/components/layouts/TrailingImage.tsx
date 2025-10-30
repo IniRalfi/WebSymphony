@@ -89,7 +89,7 @@ const AnimatedImage = forwardRef<AnimatedImageRef, { src: string }>(
           }),
           controls.start({
             opacity: 0,
-            transition: { duration: 1.1, ease: "easeOut" },
+            transition: { duration: 1.1, ease: "easeInOut" },
           }),
         ])
 

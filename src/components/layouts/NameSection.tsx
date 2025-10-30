@@ -26,7 +26,7 @@ export const NameSection = () => {
               transition={{
                 duration: 0.6,
                 delay: index * 0.02,
-                type: "easeInOut",
+                type: "spring",
               }}
               className="inline-block"
             >

@@ -1,7 +1,8 @@
 "use client"
 
-import React, { useCallback, useEffect, useRef, useState } from "react"
+import React, { useCallback, useEffect, useState } from "react"
 
+import { useLenis } from "lenis/react"
 import { Pause, Play } from "lucide-react"
 
 const sections = [
@@ -100,11 +101,24 @@ const sections = [
 export default function Lirik() {
   const [isScrolling, setIsScrolling] = useState(false)
   const [scrollSpeed, setScrollSpeed] = useState(1)
-  const requestRef = useRef<number | null>(null)
+  const lenis = useLenis()
 
-  const smoothScrollBy = useCallback((amount: number) => {
-    window.scrollBy(0, amount)
-  }, [])
+  const smoothScrollBy = useCallback(
+    (amount: number) => {
+      const speed = (1 - 0.2 * amount) * 1000
+      lenis?.scrollTo("#section-1", { duration: speed })
+    },
+    [lenis]
+  )
+
+  useEffect(() => {
+    if (isScrolling) {
+      smoothScrollBy(scrollSpeed)
+    } else {
+      lenis?.stop()
+      lenis?.start()
+    }
+  }, [isScrolling, scrollSpeed, smoothScrollBy, lenis])
 
   const toggleScroll = () => {
     setIsScrolling((prev) => !prev)
@@ -113,43 +127,6 @@ export default function Lirik() {
   const handleSpeedChange = (speed: number) => {
     setScrollSpeed(Math.max(0.1, speed))
   }
-
-  const scrollLoop = useCallback(() => {
-    const scrollStep = scrollSpeed * 0.6
-
-    const isAtBottom =
-      window.innerHeight + window.scrollY >=
-      document.documentElement.scrollHeight - window.innerHeight // Toleransi 5px
-
-    if (isAtBottom) {
-      setIsScrolling(false)
-      return
-    }
-
-    smoothScrollBy(scrollStep)
-
-    requestRef.current = requestAnimationFrame(scrollLoop)
-  }, [scrollSpeed, smoothScrollBy])
-
-  // Efek untuk mengelola loop requestAnimationFrame
-  useEffect(() => {
-    if (isScrolling) {
-      // Mulai loop animasi
-      requestRef.current = requestAnimationFrame(scrollLoop)
-    } else {
-      // Hentikan loop animasi
-      if (requestRef.current !== null) {
-        cancelAnimationFrame(requestRef.current)
-      }
-    }
-
-    // Cleanup function untuk memastikan loop berhenti saat komponen di-unmount
-    return () => {
-      if (requestRef.current !== null) {
-        cancelAnimationFrame(requestRef.current)
-      }
-    }
-  }, [isScrolling, scrollLoop])
 
   return (
     <div className="relative">
@@ -189,6 +166,7 @@ export default function Lirik() {
           )
         })}
       </div>
+      <div id="section-1"></div>
     </div>
   )
 }
@@ -199,35 +177,47 @@ type SpeedControlProps = {
 }
 
 const SpeedControl = ({ speed, onSpeedChange }: SpeedControlProps) => {
+  const [isHovered, setIsHovered] = useState(false)
+
+  function toggleSpeedChange(speed: number) {
+    onSpeedChange(speed)
+    setIsHovered(false)
+  }
   return (
-    <div className="group relative w-fit">
-      <div className="bg-primary absolute -top-full right-0 z-20 flex items-center rounded-2xl p-1 text-xs text-white opacity-0 transition-all duration-300 group-hover:opacity-100">
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="group relative"
+    >
+      <div
+        className={`bg-primary absolute -top-full right-0 z-20 flex items-center rounded-2xl p-1 text-xs text-white transition-all duration-300 ${isHovered ? "opacity-100" : "opacity-0"}`}
+      >
         <button
-          onClick={() => onSpeedChange(1)}
+          onClick={() => toggleSpeedChange(1)}
           className="hover:text-primary rounded-2xl p-3 transition-all duration-300 hover:bg-white"
         >
           1X
         </button>
         <button
-          onClick={() => onSpeedChange(2)}
+          onClick={() => toggleSpeedChange(2)}
           className="hover:text-primary rounded-2xl p-3 transition-all duration-300 hover:bg-white"
         >
           2X
         </button>
         <button
-          onClick={() => onSpeedChange(3)}
+          onClick={() => toggleSpeedChange(3)}
           className="hover:text-primary rounded-2xl p-3 transition-all duration-300 hover:bg-white"
         >
           3X
         </button>
         <button
-          onClick={() => onSpeedChange(4)}
+          onClick={() => toggleSpeedChange(4)}
           className="hover:text-primary rounded-2xl p-3 transition-all duration-300 hover:bg-white"
         >
           4X
         </button>
         <button
-          onClick={() => onSpeedChange(5)}
+          onClick={() => toggleSpeedChange(5)}
           className="hover:text-primary rounded-2xl p-3 transition-all duration-300 hover:bg-white"
         >
           5X
