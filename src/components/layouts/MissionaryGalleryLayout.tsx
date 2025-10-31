@@ -14,7 +14,7 @@ export const MissionaryGalleryLayout = ({ gallery }: Props) => {
 
   if (!window) return null
 
-  let numberOfArrays = 1
+  let numberOfArrays = 2
   if (window.innerWidth >= 1024) {
     // lg
     numberOfArrays = 4
