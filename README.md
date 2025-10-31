@@ -61,32 +61,7 @@ Website ini menampilkan profil mahasiswa, dokumentasi kegiatan, lagu angkatan, s
 kunjungi: https://symphony24.vercel.app
 
 👥 Tim Pengembang
-WebSymphony dikembangkan oleh para mahasiswa angkatan Symphony dengan pembagian tugas sebagai berikut:
-
-Project Manager: Nabila Nur Anisa
-
-Ketua Analyst: Timothy Walukow
-
-Ketua UI/UX Designer: Evan Mulya Oktarohmat, Rito Ramadhan dan ditambahkan oleh ketua tim programmer
-
-Ketua Tim Programmer: Rafli Pratama
-
-Programmer & Kontributor:
-
-Nabil – integrasi API foto untuk kelas A
-
-Fahdil – integrasi API foto untuk kelas B
-
-Kania – pengisian data mahasiswa kelas B, setup database awal, testing awal
-
-Jesika – input quotes & sosial media kelas B, menangani merge conflict
-
-Marcello – input quotes & sosial media kelas A
-
-Rasyid – membuat page lirik lagu dan struktur folder header/footer
-
-Frans – membuat komponen header dan footer
-
+WebSymphony dikembangkan oleh para mahasiswa sistem informasi angkatan 2024
 📌 Catatan
 Website ini akan terus dioptimalkan dan dikembangkan seiring waktu.
 
