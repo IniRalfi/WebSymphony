@@ -136,7 +136,7 @@ export default function Lirik() {
           <button
             onClick={toggleScroll}
             title="Auto scroll"
-            className="bg-primary flex size-16 items-center justify-center p-4 text-white transition-all duration-300 hover:rounded-2xl"
+            className="bg-primary flex size-16 cursor-pointer items-center justify-center p-4 text-white transition-all duration-300 hover:rounded-2xl"
           >
             {isScrolling ? <Pause /> : <Play />}
           </button>
@@ -185,6 +185,7 @@ const SpeedControl = ({ speed, onSpeedChange }: SpeedControlProps) => {
   }
   return (
     <div
+      onClick={() => setIsHovered(!isHovered)}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className="group relative"
@@ -194,38 +195,38 @@ const SpeedControl = ({ speed, onSpeedChange }: SpeedControlProps) => {
       >
         <button
           onClick={() => toggleSpeedChange(1)}
-          className="hover:text-primary rounded-2xl p-3 transition-all duration-300 hover:bg-white"
+          className="hover:text-primary cursor-pointer rounded-2xl p-3 transition-all duration-300 hover:bg-white"
         >
           1X
         </button>
         <button
           onClick={() => toggleSpeedChange(2)}
-          className="hover:text-primary rounded-2xl p-3 transition-all duration-300 hover:bg-white"
+          className="hover:text-primary cursor-pointer rounded-2xl p-3 transition-all duration-300 hover:bg-white"
         >
           2X
         </button>
         <button
           onClick={() => toggleSpeedChange(3)}
-          className="hover:text-primary rounded-2xl p-3 transition-all duration-300 hover:bg-white"
+          className="hover:text-primary cursor-pointer rounded-2xl p-3 transition-all duration-300 hover:bg-white"
         >
           3X
         </button>
         <button
           onClick={() => toggleSpeedChange(4)}
-          className="hover:text-primary rounded-2xl p-3 transition-all duration-300 hover:bg-white"
+          className="hover:text-primary cursor-pointer rounded-2xl p-3 transition-all duration-300 hover:bg-white"
         >
           4X
         </button>
         <button
           onClick={() => toggleSpeedChange(5)}
-          className="hover:text-primary rounded-2xl p-3 transition-all duration-300 hover:bg-white"
+          className="hover:text-primary cursor-pointer rounded-2xl p-3 transition-all duration-300 hover:bg-white"
         >
           5X
         </button>
       </div>
       <button
         title="Auto scroll"
-        className="bg-primary flex size-16 items-center justify-center p-4 text-white transition-all duration-300 hover:rounded-2xl"
+        className="bg-primary flex size-16 cursor-pointer items-center justify-center p-4 text-white transition-all duration-300 hover:rounded-2xl"
       >
         {speed} X
       </button>

@@ -40,8 +40,6 @@ export const MAHASISWA = [
     nim: "H1101241004",
     foto: [
       "https://res.cloudinary.com/symphony24/image/upload/v1750326955/IMG_2601_xhwt0q.jpg",
-      "https://res.cloudinary.com/symphony24/image/upload/v1750326955/IMG_2601_xhwt0q.jpg",
-      "https://res.cloudinary.com/symphony24/image/upload/v1750326955/IMG_2601_xhwt0q.jpg",
     ],
     quotes: "Semua setara di graha Symphonia",
     instagram: "virsyandr",
@@ -197,8 +195,6 @@ export const MAHASISWA = [
     nim: "H1101241019",
     foto: [
       "https://res.cloudinary.com/symphony24/image/upload/v1750335412/WhatsApp_Image_2025-06-19_at_19.03.56_34f2d929_a0zqvj.jpg",
-      "https://res.cloudinary.com/symphony24/image/upload/v1750335411/WhatsApp_Image_2025-06-19_at_19.03.56_7bb42b5b_xq3mrh.jpg",
-      "https://res.cloudinary.com/symphony24/image/upload/v1750335412/WhatsApp_Image_2025-06-19_at_19.03.56_34f2d929_a0zqvj.jpg",
     ],
     quotes: "They said to be cool but, I’m already the coolest ^____^ ",
     instagram: "olievieyya",
@@ -244,8 +240,6 @@ export const MAHASISWA = [
     nama: "Rifa Dwinanda Bagaskara",
     nim: "H1101241023",
     foto: [
-      "https://res.cloudinary.com/symphony24/image/upload/v1750320091/IMG_2556_rjai0k_alwqpe.jpg",
-      "https://res.cloudinary.com/symphony24/image/upload/v1750320091/IMG_2556_rjai0k_alwqpe.jpg",
       "https://res.cloudinary.com/symphony24/image/upload/v1750320091/IMG_2556_rjai0k_alwqpe.jpg",
     ],
     quotes:
@@ -449,8 +443,6 @@ export const MAHASISWA = [
     nama: "Marcello Chrisdiantoro",
     nim: "H1101241041",
     foto: [
-      "https://res.cloudinary.com/symphony24/image/upload/v1750327076/IMG_2595_mfrpc3.jpg",
-      "https://res.cloudinary.com/symphony24/image/upload/v1750327076/IMG_2595_mfrpc3.jpg",
       "https://res.cloudinary.com/symphony24/image/upload/v1750327076/IMG_2595_mfrpc3.jpg",
     ],
     quotes: "Jadi lebih baik dibanding diriku",

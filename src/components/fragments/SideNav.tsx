@@ -28,7 +28,7 @@ export const SideNav = () => {
           ease: cubicBezier(0.76, 0, 0.24, 1),
         }}
         onClick={toggleSideNav}
-        className="bg-primary fixed top-6 right-6 z-40 p-4 text-white transition-all duration-300 hover:rounded-2xl"
+        className="bg-primary fixed top-6 right-6 z-40 cursor-pointer p-4 text-white transition-all duration-300 hover:rounded-2xl"
       >
         <Menu />
       </motion.button>
@@ -41,7 +41,7 @@ export const SideNav = () => {
               initial="initial"
               animate="enter"
               exit="exit"
-              className="fixed top-0 right-0 z-50 h-screen"
+              className="fixed top-0 right-0 z-50 h-svh"
             >
               <div className="bg-primary flex h-full flex-col justify-between px-6 pt-8 leading-none md:px-10 md:pt-0">
                 <h2 className="font-serif text-8xl text-white md:text-[9rem] lg:text-[12rem]">

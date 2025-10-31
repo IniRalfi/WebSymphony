@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 
 import { MahasiswaType } from "@/constants/mahasiswa"
 
@@ -26,7 +27,11 @@ export function CardMahasiswa({
   const optimizedImageUrl = optimizeCloudinaryUrl(student.foto[0])
 
   return (
-    <div key={student.nim} className="group h-fit">
+    <Link
+      href={`/mahasiswa/${student.nim}`}
+      key={student.nim}
+      className="group h-fit"
+    >
       <div className="relative overflow-hidden rounded-lg bg-gray-100">
         <Image
           className={`aspect-[4/6] rounded-lg grayscale transition-all duration-300 group-hover:grayscale-0`}
@@ -43,6 +48,6 @@ export function CardMahasiswa({
         <h3 className="text-sm font-medium text-gray-900">{student.nama}</h3>
         <p className="text-xs text-gray-500">{student.nim}</p>
       </div>
-    </div>
+    </Link>
   )
 }
