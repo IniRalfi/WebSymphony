@@ -18,7 +18,10 @@ const perfectlyNineties = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "Symphony",
+  title: {
+    template: "%s | Symphony",
+    default: "Symphony",
+  },
   description: "Website resmi Symphony 2024",
 }
 

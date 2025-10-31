@@ -9,6 +9,35 @@ type Props = {
   params: Promise<{ id: string }>
 }
 
+export async function generateMetadata({ params }: Props) {
+  const { id } = await params
+  const mahasiswa = MAHASISWA.find((student) => student.nim === id)
+
+  if (!mahasiswa) {
+    return {
+      title: "Not Found",
+      description: "Mahasiswa tidak ditemukan",
+    }
+  }
+
+  return {
+    title: mahasiswa.nama,
+    description: mahasiswa.quotes,
+    openGraph: {
+      title: mahasiswa.nama,
+      description: mahasiswa.quotes,
+      images: [
+        {
+          url: mahasiswa.foto[0],
+          width: 1600,
+          height: 1200,
+        },
+      ],
+      type: "website",
+    },
+  }
+}
+
 export default async function DetailMahasiswaPage({ params }: Props) {
   const { id } = await params
   const mahasiswa = MAHASISWA.find((student) => student.nim === id)

@@ -1,8 +1,14 @@
 import React from "react"
+import { Metadata } from "next"
 
 import { GALLERY } from "@/constants/gallery"
 
 import { MissionaryGalleryLayout } from "@/components/layouts/MissionaryGalleryLayout"
+
+export const metadata: Metadata = {
+  title: "Galeri",
+  description: "Kegiatan dan kenangan dari angkatan Symphony",
+}
 
 export default function GaleriPage() {
   return (

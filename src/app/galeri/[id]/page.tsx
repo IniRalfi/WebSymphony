@@ -7,6 +7,35 @@ type Props = {
   params: Promise<{ id: string }>
 }
 
+export async function generateMetadata({ params }: Props) {
+  const { id } = await params
+  const gallery = GALLERY.find((gallery) => gallery.id === Number(id))
+
+  if (!gallery) {
+    return {
+      title: "Not Found",
+      description: "Kenangan tidak ditemukan",
+    }
+  }
+
+  return {
+    title: gallery.title,
+    description: "Kegiatan dan kenangan dari angkatan Symphony",
+    openGraph: {
+      title: gallery.title,
+      description: "Kegiatan dan kenangan dari angkatan Symphony",
+      images: [
+        {
+          url: "https://symphony24.vercel.app" + gallery.src,
+          width: 1600,
+          height: 1200,
+        },
+      ],
+      type: "website",
+    },
+  }
+}
+
 export default async function DetailMahasiswaPage({ params }: Props) {
   const { id } = await params
   const gallery = GALLERY.find((gallery) => gallery.id === Number(id))

@@ -1,6 +1,12 @@
 import React from "react"
+import { Metadata } from "next"
 
 import Lirik from "@/components/ui/Lirik"
+
+export const metadata: Metadata = {
+  title: "Lagu Angkatan",
+  description: "Lagu angkatan Symphony",
+}
 
 export default function page() {
   return (

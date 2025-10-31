@@ -1,8 +1,14 @@
 import React from "react"
+import { Metadata } from "next"
 
 import { MAHASISWA } from "@/constants/mahasiswa"
 
 import { CardMahasiswa } from "@/components/fragments/CardMahasiswa"
+
+export const metadata: Metadata = {
+  title: "Mahasiswa",
+  description: "Mahasiswa dari angkatan Symphony",
+}
 
 export default function MahasiwaPage() {
   return (
