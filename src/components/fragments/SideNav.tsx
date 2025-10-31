@@ -51,7 +51,9 @@ export const SideNav = () => {
                   {NAV.map((item, index) => (
                     <li key={index} onClick={toggleSideNav}>
                       <MenuNav
-                        isActive={pathname === item.href}
+                        isActive={
+                          pathname.split("/")[1] === item.href.split("/")[1]
+                        }
                         href={item.href}
                         textClassName="text-white text-3xl md:text-4xl"
                         bgClassName="bg-white"
