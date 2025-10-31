@@ -44,13 +44,13 @@ export default async function DetailMahasiswaPage({ params }: Props) {
 
   return (
     <main className="container">
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5">
+      <div className="grid grid-cols-1 gap-10 pt-24 md:grid-cols-2 md:pt-0 lg:grid-cols-5">
         <div className="col-span-1 flex flex-col justify-end py-16 lg:col-span-2">
           <h1 className="text-primary text-center font-serif text-6xl md:text-start md:text-7xl">
             {gallery.title}
           </h1>
         </div>
-        <div className="col-span-1 flex h-svh items-end justify-end py-16 lg:col-span-3">
+        <div className="col-span-1 flex items-end justify-end md:h-svh md:py-16 lg:col-span-3">
           <Image
             src={gallery.src}
             alt={gallery.title}
